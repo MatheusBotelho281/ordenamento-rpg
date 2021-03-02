@@ -2,7 +2,9 @@ import TituloSuperior from '../components/TituloSuperior'
 import Botao from '../components/Botoes'
 import { ListaBotoes, TextoPadrao, DivOrg } from './styles'
 import { useState } from 'react'
+import React from 'react';
 import styled from 'styled-components'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const DivTr = styled.div`
 height: 225px;
@@ -30,8 +32,25 @@ float: right;
 `
 
 const BotaoCampanha = styled.button`
-
+font-size: larger;
+padding: 3px;
+color:rgb(32,32,32);
+background-color: white;
+border: 2px solid rgb(32, 32, 32);
+width: 19rem;
+height: 5rem;
+transition-duration: 0.2s;
+cursor: not-allowed;
 `
+
+const LocalBotaoCam = styled.div`
+display: flex;
+align-items:center;
+justify-content: center;
+top: 0;
+bottom: 10px;
+`
+
 
 export default function Home() {
 
@@ -89,6 +108,11 @@ export default function Home() {
           </p>
       </TextoPadrao>
       <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />
+      <div style={{position: 'relative', bottom: '-33rem'}}>
+        <LocalBotaoCam>
+          <BotaoCampanha> 02/05/2021</BotaoCampanha>
+        </LocalBotaoCam>
+      </div>
     </div>
   )
 }

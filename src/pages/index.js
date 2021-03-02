@@ -20,7 +20,7 @@ font-size: 5rem;
 color: #fff;
 text-align: center;
 position: absolute;
-transition: all 0.35s;
+transition: all 0.5s;
 cursor:default;
 `
 
@@ -39,7 +39,6 @@ background-color: white;
 border: 2px solid rgb(32, 32, 32);
 width: 19rem;
 height: 5rem;
-transition-duration: 0.2s;
 cursor: not-allowed;
 `
 
@@ -50,7 +49,6 @@ justify-content: center;
 top: 0;
 bottom: 10px;
 `
-
 
 export default function Home() {
 
@@ -110,7 +108,7 @@ export default function Home() {
       <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />
       <div style={{position: 'relative', bottom: '-33rem'}}>
         <LocalBotaoCam>
-          <BotaoCampanha> 02/05/2021</BotaoCampanha>
+          <BotaoCampanha>02/05/2021</BotaoCampanha>
         </LocalBotaoCam>
       </div>
     </div>

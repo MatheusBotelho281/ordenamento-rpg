@@ -88,7 +88,7 @@ export default function Home() {
       <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />
       <div style={{position: 'relative', bottom: '-33rem'}}>
         <LocalBotaoCam>
-          <BotaoCampanha>02/05/2021</BotaoCampanha>
+          <BotaoCampanha>10/04/2021</BotaoCampanha>
         </LocalBotaoCam>
       </div>
     </div>

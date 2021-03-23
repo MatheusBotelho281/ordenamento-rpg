@@ -93,10 +93,10 @@ export default function Header() {
 
   const Levi ={
     nome: 'Levi Ackerman',
-    historia: '',
-    fim: '',
+    historia: 'Criado em uma vila de humanos em que uma guerra entre Humanos e Gigantes foi travada, Aos 8 anos ele começou a ser treinado como um soldado e aos 11 ele já era o melhor da sua tropa e o líder de uma, ele foi encontrado por Alazar que o salvou no final de uma guerra, apos Levi ver sua família ser morta na sua frente pelo mesmo gigante.',
+    fim: 'Apos o fim da guerra, e a recuperação de Alazar, o seu salvador. Ele reencontrou sua Prima Mikasa e junto com ela refundou a tropa de exploração, morreu de velhice apos anos e anos treinando varias pessoas.',
     player: 'Matheus',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824066380332138546/Levi.png?width=380&height=676'
   }
 
   const Lunar ={
@@ -141,7 +141,7 @@ export default function Header() {
 
   const Ryu ={
     nome: 'Ryu Straub, deus da sorte',
-    historia: '',
+    historia: 'Ryu foi criado pelo seu avô, Fou-Lu, ',
     fim: '',
     player: 'Guto',
     imagem: 'https://media.discordapp.net/attachments/501196063613648900/824029288864284742/Grande_pequeno_Ryu.png?width=380&height=676'
@@ -182,6 +182,9 @@ export default function Header() {
   return (
     <Wrapper>
       <div>
+        <a href='/' className='voltar'>
+          Home
+        </a>
         <h1>
           Personagens
       </h1>

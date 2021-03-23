@@ -18,6 +18,7 @@ flex-direction: row;
 justify-content: center;
 padding-left: 15%;
 .textos{
+  width: 545px;
   position: relative;
   display: flex;
   justify-content: center;

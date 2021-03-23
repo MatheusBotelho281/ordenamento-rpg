@@ -1,0 +1,241 @@
+import React from 'react'
+import { InnerWrapper, Wrapper } from './styles'
+import Modal from '../Modal'
+import { useState } from 'react'
+
+export default function Header() {
+
+  const [personagem, setPersonagem] = useState('Nome do Personagem')
+  const [historia, setHistoria] = useState('História')
+  const [fim, setFim] = useState('Destino')
+  const [player, setPlayer] = useState('')
+  const [linkImagem, setLinkImagem] = useState('https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676')
+
+  const Alazar = {
+    nome: 'Alazar, O Demônio Incorruptível',
+    historia: 'Criado em uma vilã de elfos junto com Eliza, sua amiga de infância. Aos 10 anos foi vítima do grilhão e ficou traumatizado. Fugiu com Eliza. No meio do caminho ela ficou para trás para que ele conseguisse fugir. Correu e fugiu por anos até ser resgatado por um monastério. Ficou lá por anos até o grupo encontrá-lo.',
+    fim: 'Após o fim da guerra, o Ordenamento desceu até o nono círculo do inferno para buscar seu velho amigo. Derrotaram os 7 pecados e restauraram a alma de Alazar. Agora governa o primeiro círculo ao lado de Morgana, sua rainha.',
+    player: 'Pedro',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/823984084556185610/Alazar.png?width=380&height=676'
+  }
+
+  const Annabeth ={
+    nome: 'Annabeth Chase, A Inocência Vindoura',
+    historia: 'Annabeth foi criada em uma vila pequena, gostava de brincar com seu irmão no lago, mas era proibido entrar nele. O irmão entrou, morreu, e Annabeth foi culpada pela morte dele. Seu pai foi para cima dela e ela o matou. Fugiu foragida da vila jurando para sua mãe que voltaria com dinheiro o suficiente para levá-la para um lugar melhor.',
+    fim: 'Annabeth após a guerra contra Citos, conseguiu se tornar Sentinela da cidade de Fairheaven. Com ajuda da rainha, trouxe sua mãe para a cidade, onde viveu protegendo a servindo à coroa até o fim da sua vida aos 67 anos.',
+    player: 'Pedro',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824000250431406120/Annabeth.png?width=380&height=676'
+  }
+
+  const Aquos ={
+    nome: 'Aquos Preyas, O Sacrifício',
+    historia: '',
+    fim: '',
+    player: 'Thomaz',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824002373663719464/Aquos.png?width=380&height=676'
+  }
+
+  const Barachiel ={
+    nome:'Barachiel',
+    historia:'',
+    fim:'',
+    player:'Alequin',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Christopher ={
+    nome:'Christopher',
+    historia:'Christopher foi um Aasimar caído, que se rebelou durante uma excursão dos Aasimares. Caiu e se aliou ào Lorde Vampiro como espião, trabalhando em primeiro lugar para Dendar, a deusa Cobra que engoliu o sol e muitos deuses durante a guerra. Christopher se aliou ao grupo durante a guerra contra os vampiros.',
+    fim:' Foi morto 2 semanas depois de entrar no grupo pelo líder dos rubros.',
+    player:'Pedro',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Djinko ={
+    nome:'Djinko Talorharg',
+    historia:'Nascido para servir a Rainha de Rapina, acabou se rebelando em uma das missões, onde viu crianças sendo sacrificadas em um velho ritual. Após ser expulso e se tornar um aasimar caido, vagou pelo mundo até ser resgatado e se tornar um bardo. Sua memória foi apagada, e sua busca pela verdade o levou até um encontro com o Ordenamento.',
+    fim:'Acabou caindo após poucas semanas com o grupo, dentro de uma construção onde houve um combate.',
+    player:'Botelho',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824007093182791730/Djinko.png?width=380&height=676'
+  }
+
+  const Halric ={
+    nome:'Halric Crowgar Sahvot',
+    historia:'Criado por um velho draconato, Halric e seus 2 irmãos se tornaram importantes membros da sociedade de Sarlona, cada um de seu jeito. Ainda jovem, cometeu um erro que seria lembrado por séculos e o perseguiria. Em sua busca por redenção acabou por encontrar Ryu, quem foi seu aprendiz por alguns anos, até os caminhos e objetivos divergirem. O destino do Ordenamento fez com que ambos se encontrassem e participassem do destino do mundo. Halric acabou por se tornar um dos Notáveis na Quarta Era.',
+    fim:'Ainda anda pelo mundo, ajudando todos que consegue, sendo um dos poucos com acesso comum à magia.',
+    player:'Botelho',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824005149210574889/Halric.png?width=380&height=676'
+  }
+
+  const Harold ={
+    nome:'Harold Shump',
+    historia:'',
+    fim:'',
+    player:'Pedro',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824006152588886026/Harold.png?width=380&height=676'
+  }
+
+  const Ithuryel ={
+    nome: 'Ithuryel',
+    historia: '',
+    fim: '',
+    player: 'Alequin',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Leo ={
+    nome: 'Leo Valdez',
+    historia:'Leo, nasceu em uma cidade avançada na questão de maquinário e inteligência mecânica, além da conexão entre magia e tecnologia. Namorava Calipso e em um dos experimentos acabou mandando ela para o Plano Etéreo. Então, saiu em busca de uma forma de resgatá-la.',
+    fim:'Léo, após terminar a guerra contra Bel, conseguiu um favor dos deuses. Bahamut o ajudou a trazer Calipso do plano etéreo e com ela voltou para sua cidade natal, onde se tornou conhecido por suas histórias e invenções que transcendiam a inteligência comum.',
+    player:'Pedro',
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824022193968382002/Leo.png?width=380&height=676'
+  }
+
+  const Levi ={
+    nome: 'Levi Ackerman',
+    historia: '',
+    fim: '',
+    player: 'Matheus',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Lunar ={
+    nome: 'Lunar',
+    historia: '',
+    fim: '',
+    player: 'Thomaz',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Maximus ={
+    nome: 'Maximus',
+    historia: '',
+    fim: '',
+    player: 'Alequin',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Merle ={
+    nome: 'Merle Lumos',
+    historia: '',
+    fim: '',
+    player: 'Rodolpho',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Molly ={
+    nome: 'Mollymauk TeaLeaf',
+    historia: '',
+    fim: '',
+    player: 'Alequin',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Morgana ={
+    nome: 'Morgana',
+    historia: '',
+    fim: '',
+    player: 'Milena',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Ryu ={
+    nome: 'Ryu Straub, deus da sorte',
+    historia: '',
+    fim: '',
+    player: 'Guto',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824029288864284742/Grande_pequeno_Ryu.png?width=380&height=676'
+  }
+
+  const Syria ={
+    nome: 'Syria Whitethorn',
+    historia: '',
+    fim: '',
+    player: 'Thomaz',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Vark ={
+    nome: 'Vark',
+    historia: '',
+    fim: '',
+    player: 'Alequin',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  const Yuna ={
+    nome: 'Yuna',
+    historia: '',
+    fim: '',
+    player: 'Milena',
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+  }
+
+  function setPersonag(nome, historia, final, jogad, link) {
+    setPersonagem(nome)
+    setHistoria(historia)
+    setFim(final)
+    setPlayer(jogad)
+    setLinkImagem(link)
+  }
+
+  return (
+    <Wrapper>
+      <div>
+        <h1>
+          Personagens
+      </h1>
+      </div>
+      <InnerWrapper>
+        <ul>
+          <li onClick={() => setPersonag(Alazar.nome, Alazar.historia, Alazar.fim, Alazar.player, Alazar.imagem)}>
+            Alazar</li>
+          <li onClick={() => setPersonag(Annabeth.nome, Annabeth.historia, Annabeth.fim, Annabeth.player, Annabeth.imagem)}>
+            Annabeth</li>
+          <li onClick={() => setPersonag(Aquos.nome, Aquos.historia, Aquos.fim, Aquos.player, Aquos.imagem)}>
+            Aquos</li>
+          <li onClick={() => setPersonag(Barachiel.nome, Barachiel.historia, Barachiel.fim, Barachiel.player, Barachiel.imagem)}>
+            Barachiel</li>
+          <li onClick={() => setPersonag(Christopher.nome, Christopher.historia, Christopher.fim, Christopher.player, Christopher.imagem)}>
+            Christopher</li>
+          <li onClick={() => setPersonag(Djinko.nome, Djinko.historia, Djinko.fim, Djinko.player, Djinko.imagem)}>
+            Djinko</li>
+          <li onClick={() => setPersonag(Halric.nome, Halric.historia, Halric.fim, Halric.player, Halric.imagem)}>
+            Halric</li>
+          <li onClick={() => setPersonag(Harold.nome, Harold.historia, Harold.fim, Harold.player, Harold.imagem)}>
+            Harold</li>
+          <li onClick={() => setPersonag(Ithuryel.nome, Ithuryel.historia, Ithuryel.fim, Ithuryel.player, Ithuryel.imagem)}>
+            Ithuryel</li>
+          <li onClick={() => setPersonag(Leo.nome, Leo.historia, Leo.fim, Leo.player, Leo.imagem)}>
+            Leo</li>
+          <li onClick={() => setPersonag(Levi.nome, Levi.historia, Levi.fim, Levi.player, Levi.imagem)}>
+            Levi</li>
+          <li onClick={() => setPersonag(Lunar.nome, Lunar.historia, Lunar.fim, Lunar.player, Lunar.imagem)}>
+            Lunar</li>
+          <li onClick={() => setPersonag(Maximus.nome, Maximus.historia, Maximus.fim, Maximus.player, Maximus.imagem)}>
+            Maximus</li>
+          <li onClick={() => setPersonag(Merle.nome, Merle.historia, Merle.fim, Merle.player, Merle.imagem)}>
+            Merle</li>
+          <li onClick={() => setPersonag(Molly.nome, Molly.historia, Molly.fim, Molly.player, Molly.imagem)}>
+            Molly</li>
+          <li onClick={() => setPersonag(Morgana.nome, Morgana.historia, Morgana.fim, Morgana.player, Morgana.imagem)}>
+            Morgana</li>
+          <li onClick={() => setPersonag(Ryu.nome, Ryu.historia, Ryu.fim, Ryu.player, Ryu.imagem)}>
+            Ryu</li>
+          <li onClick={() => setPersonag(Syria.nome, Syria.historia, Syria.fim, Syria.player, Syria.imagem)}>
+            Syria</li>
+          <li onClick={() => setPersonag(Vark.nome, Vark.historia, Vark.fim, Vark.player, Vark.imagem)}>
+            Vark</li>
+          <li onClick={() => setPersonag(Yuna.nome, Yuna.historia, Yuna.fim, Yuna.player, Yuna.imagem)}>
+            Yuna</li>
+        </ul>
+        <Modal
+          nomePersonagem={personagem}
+          historia={historia}
+          destino={fim}
+          jogador={player}
+          imagem={linkImagem} />
+      </InnerWrapper>
+    </Wrapper>
+  )
+}

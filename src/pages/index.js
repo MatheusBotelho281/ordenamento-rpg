@@ -1,10 +1,9 @@
-import TituloSuperior from '../components/TituloSuperior'
 import Botao from '../components/Botoes'
-import { ListaBotoes, TextoPadrao, DivOrg } from './styles'
+import { ListaBotoes, TextoPadrao, DivOrg } from '../styles/styles.js'
 import { useState } from 'react'
 import React from 'react';
 import styled from 'styled-components'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Link from 'next/link'
 
 const DivTr = styled.div`
 height: 225px;
@@ -72,7 +71,7 @@ export default function Home() {
       </DivOrg>
       <ListaBotoes>
         <Botao NomeBotao='Mundo' />
-        <Botao NomeBotao='Personagens' />
+        <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
         <Botao NomeBotao='A Guerra' />
         <Botao NomeBotao='Pós Guerra' />
         <Botao NomeBotao='Os 7' />
@@ -80,29 +79,10 @@ export default function Home() {
       </ListaBotoes>
       <TextoPadrao>
         <p>
-          Mestrado e criado originalmente em 2019 pelo grande mestre Handowsblack (Alex),
-          O Ordenamento foi uma fonte de histórias incríveis e realmente únicos,
-          algo que apenas um dos melhores mestres conseguiria criar.
+          ISSO MESMO VADIAS, A SEGUNDA CAMPANHA ESTÁ VINDO.
           </p>
         <p>
-          Talvez o fim de tudo tenha se dado de maneira estranha e complicada,
-          mas a vida acaba nos surpreendendo todos os dias, algumas vezes, de
-          maneiras bem estranhas...
-          </p>
-        <p>
-          Mas tudo isso não se resume apenas a uma breve história. Não, o mundo
-          que foi criado sempre foi algo especial para todos que participaram.
-          Então, da melhor maneira possível, tentaremos trazer tudo de volta. Não,
-          não ficará bom como era, principalmente pela falta de criatividade
-          para criar um mundo que aparenta estar vivo.
-          </p>
-        <p>
-          É isso que a <b>Campanha dos 7</b> se propõe, tentar trazer tudo de volta para
-            mais uma aventura com memórias únicas.
-          </p>
-        <p>
-          Esperamos cumprir com o idealizado.<br />
-            Botelho e Pedro.
+          HOJE COMEREMOS CUS... TALVEZ NÃO HOJE, MAS AGUARDEM, CAMBADA DE PROSTIRANHA!
           </p>
       </TextoPadrao>
       <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />

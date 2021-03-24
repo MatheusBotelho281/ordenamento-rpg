@@ -48,7 +48,7 @@ export default function Header() {
     historia:'Christopher foi um Aasimar caído, que se rebelou durante uma excursão dos Aasimares. Caiu e se aliou ào Lorde Vampiro como espião, trabalhando em primeiro lugar para Dendar, a deusa Cobra que engoliu o sol e muitos deuses durante a guerra. Christopher se aliou ao grupo durante a guerra contra os vampiros.',
     fim:' Foi morto 2 semanas depois de entrar no grupo pelo líder dos rubros.',
     player:'Pedro',
-    imagem:'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824360307954286602/Chris.png?width=380&height=676'
   }
 
   const Djinko ={
@@ -68,7 +68,7 @@ export default function Header() {
   }
 
   const Harold ={
-    nome:'Harold Shump',
+    nome:'Mestre Harold Shump',
     historia:'',
     fim:'',
     player:'Pedro',
@@ -104,7 +104,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Thomaz',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824359886678786078/Lunar.png?width=380&height=676'
   }
 
   const Maximus ={
@@ -120,7 +120,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Rodolpho',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824341358550188142/Mei_Rerle.png?width=380&height=676'
   }
 
   const Molly ={
@@ -141,8 +141,8 @@ export default function Header() {
 
   const Ryu ={
     nome: 'Ryu Straub, deus da sorte',
-    historia: 'Ryu foi criado pelo seu avô, Fou-Lu, ',
-    fim: '',
+    historia: 'Ryu foi criado pelo seu avô, Fou-Lu, antigo paladino de Bahamut. Ainda jovem foi obrigado a sair de sua casa após um ataque de Bel à sua vila, Tymora o salvou. Quando pôde sair do orfanato, começou a procurar por respostas, quando acabou encontrando Halric em uma de suas viagens sem rumo. Treinou por alguns anos enquando buscava sentido na vida, até que foi obrigado a seguir seu caminho separado do mestre. Se encontraram anos mais tarde, vindo a fazer parte do Ordenamento.',
+    fim: 'Ascendeu como deus da sorte alguns anos após o fim da guerra, com ajuda de Molly e Halric, contruiu a Ordem de Prata, a Ordem Terceira Prateada e o Monastério do Filho do Dragão. Ainda tenta ajudar todos para manter sua promessa a Tymora.',
     player: 'Guto',
     imagem: 'https://media.discordapp.net/attachments/501196063613648900/824029288864284742/Grande_pequeno_Ryu.png?width=380&height=676'
   }

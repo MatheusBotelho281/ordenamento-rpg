@@ -73,7 +73,7 @@ export default function Home() {
         <Botao NomeBotao='Mundo' />
         <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
         <Botao NomeBotao='A Guerra' />
-        <Botao NomeBotao='Pós Guerra' />
+        <Botao NomeBotao='Sabedoria' />
         <Botao NomeBotao='Os 7' />
         <Botao NomeBotao='Panteão' />
       </ListaBotoes>

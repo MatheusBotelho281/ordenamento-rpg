@@ -133,10 +133,10 @@ export default function Header() {
 
   const Morgana ={
     nome: 'Morgana Sardothien, Traidora Falha',
-    historia: '',
-    fim: '',
+    historia: 'Seus pais eram nobres péssimos, pessoas más. Em um ataque de revolta popular, Tymora salvou Morgana e a levou para a floresta, onde conheceu seu patrono arquifada com apenas 8 anos. Quando estava pronta, foi enviada para roubar o Fragmento Elemental da Água. Por fim, falhou em trair o grupo e acabou se tornando parte do ordenamento.',
+    fim: 'A libertação de Alazar trouxe uma chance nova em sua vida, ao lado de quem ela realmente amava. Se tornou rainha ao lado do velho tiefling, governando todos os nove círculos do inferno.',
     player: 'Milena',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824072423451656222/Morgana.png?width=380&height=676'
   }
 
   const Ryu ={

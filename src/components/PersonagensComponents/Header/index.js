@@ -60,7 +60,7 @@ export default function Header() {
   }
 
   const Halric ={
-    nome:'Halric Crowgar Sahvot',
+    nome:'Halric Sahvot, Guardião Cinzento',
     historia:'Criado por um velho draconato, Halric e seus 2 irmãos se tornaram importantes membros da sociedade de Sarlona, cada um de seu jeito. Ainda jovem, cometeu um erro que seria lembrado por séculos e o perseguiria. Em sua busca por redenção acabou por encontrar Ryu, quem foi seu aprendiz por alguns anos, até os caminhos e objetivos divergirem. O destino do Ordenamento fez com que ambos se encontrassem e participassem do destino do mundo. Halric acabou por se tornar um dos Notáveis na Quarta Era.',
     fim:'Ainda anda pelo mundo, ajudando todos que consegue, sendo um dos poucos com acesso comum à magia.',
     player:'Botelho',
@@ -100,7 +100,7 @@ export default function Header() {
   }
 
   const Lunar ={
-    nome: 'Lunar',
+    nome: 'Lunar, A Ira Latente',
     historia: '',
     fim: '',
     player: 'Thomaz',
@@ -116,7 +116,7 @@ export default function Header() {
   }
 
   const Merle ={
-    nome: 'Merle Lumos',
+    nome: 'Merle Lumos, O Portador da Chave',
     historia: '',
     fim: '',
     player: 'Rodolpho',
@@ -124,7 +124,7 @@ export default function Header() {
   }
 
   const Molly ={
-    nome: 'Mollymauk TeaLeaf',
+    nome: 'Mollymauk TeaLeaf, Dança Escarlate',
     historia: '',
     fim: '',
     player: 'Alequin',
@@ -132,7 +132,7 @@ export default function Header() {
   }
 
   const Morgana ={
-    nome: 'Morgana',
+    nome: 'Morgana Sardothien, Traidora Falha',
     historia: '',
     fim: '',
     player: 'Milena',
@@ -164,11 +164,11 @@ export default function Header() {
   }
 
   const Yuna ={
-    nome: 'Yuna',
-    historia: '',
-    fim: '',
+    nome: 'Yuna Galathynius, Olho de Apolo',
+    historia: 'Não aceitando o fato de que os elfos do sol se achavam superiores, acabou abandonando a casa de seu família. Sentindo o chamado de Apolo, se tornou oráculo dele, entregando-se a ele totalmente. Acabou sofrendo com uma maldição que foi reduzida pela força de Alazar, quem ajudou ela após a guerra.',
+    fim: 'Se manteve como serva de Apolo, retornando a pedido do deus para seu povo, tendo que proteger eles de um mal que ainda estava por vir.',
     player: 'Milena',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824069727018025050/Puta.png?width=380&height=676'
   }
 
   function setPersonag(nome, historia, final, jogad, link) {

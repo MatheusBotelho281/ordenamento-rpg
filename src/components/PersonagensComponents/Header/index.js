@@ -112,7 +112,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Alequin',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824429683143213156/Maximus.png?width=380&height=676'
   }
 
   const Merle ={

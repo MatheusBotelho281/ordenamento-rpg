@@ -2,8 +2,10 @@ import Botao from '../components/Botoes'
 import { ListaBotoes, TextoPadrao, DivOrg } from '../styles/styles.js'
 import { useState } from 'react'
 import React from 'react';
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import Link from 'next/link'
+import { Progress } from 'react-sweet-progress';
+import "react-sweet-progress/lib/style.css";
 
 const DivTr = styled.div`
 height: 225px;
@@ -79,11 +81,9 @@ export default function Home() {
       </ListaBotoes>
       <TextoPadrao>
         <p>
-          ISSO MESMO VADIAS, A SEGUNDA CAMPANHA ESTÁ VINDO.
+          Nesse momento, o andamento da escrita está em:
           </p>
-        <p>
-          HOJE COMEREMOS CUS... TALVEZ NÃO HOJE, MAS AGUARDEM, CAMBADA DE PROSTIRANHA!
-          </p>
+          <Progress percent='65' status="success" strokeWidth={'3'} />
       </TextoPadrao>
       <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />
       <div style={{position: 'relative', bottom: '-33rem'}}>

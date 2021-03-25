@@ -6,6 +6,7 @@ import styled, { withTheme } from 'styled-components'
 import Link from 'next/link'
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
+import PopUp from '../components/PopUp'
 
 const DivTr = styled.div`
 height: 225px;
@@ -53,7 +54,11 @@ justify-content: center;
 export default function Home() {
 
   const [TituloTr, setTituloTr] = useState(false)
+  const [videoPopUp, setVideoPopUp] = useState(false)
 
+  function togglePopUp(){
+    setVideoPopUp(true)
+  }
   function onHover() {
     setTituloTr(true)
   }
@@ -64,6 +69,7 @@ export default function Home() {
 
   return (
     <div>
+      {videoPopUp && <PopUp close={() => setVideoPopUp(false)} />}
       <div>
         <DivOrg>
           <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
@@ -88,10 +94,9 @@ export default function Home() {
             Nesse momento, o andamento do especial do dia 10/04 está em
           </p>
           <Progress percent='50' status="success" strokeWidth={'3'} />
-          <BotaoCampanha style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
+          <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
         </TextoPadrao>
       </div>
-
     </div>
   )
 }

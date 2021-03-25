@@ -47,8 +47,7 @@ const LocalBotaoCam = styled.div`
 display: flex;
 align-items:center;
 justify-content: center;
-top: 0;
-bottom: 10px;
+
 `
 
 export default function Home() {
@@ -65,32 +64,34 @@ export default function Home() {
 
   return (
     <div>
-      <DivOrg>
-        <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
-          <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
-          <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>
-        </DivTr>
-      </DivOrg>
-      <ListaBotoes>
-        <Botao NomeBotao='Mundo' />
-        <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
-        <Botao NomeBotao='A Guerra' />
-        <Botao NomeBotao='Sabedoria' />
-        <Botao NomeBotao='Os 7' />
-        <Botao NomeBotao='Panteão' />
-      </ListaBotoes>
-      <TextoPadrao>
-        <p>
-          Nesse momento, o andamento da escrita está em:
+      <div>
+        <DivOrg>
+          <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
+            <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
+            <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>
+          </DivTr>
+        </DivOrg>
+        <ListaBotoes>
+          <Botao NomeBotao='Arquivos' />
+          <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
+          <Botao NomeBotao='A Guerra' />
+          <Botao NomeBotao='Sabedoria' />
+          <Botao NomeBotao='Os 7' />
+          <Botao NomeBotao='Panteão' />
+        </ListaBotoes>
+        <TextoPadrao>
+          <p>
+            Nesse momento, o andamento da escrita está em:
           </p>
           <Progress percent='65' status="success" strokeWidth={'3'} />
-      </TextoPadrao>
-      <MapaKhorInicio src='/Khorvaire_Map_Preview.jpg' />
-      <div style={{position: 'relative', bottom: '-33rem'}}>
-        <LocalBotaoCam>
-          <BotaoCampanha>10/04/2021</BotaoCampanha>
-        </LocalBotaoCam>
+          <p>
+            Nesse momento, o andamento do especial do dia 10/04 está em
+          </p>
+          <Progress percent='50' status="success" strokeWidth={'3'} />
+          <BotaoCampanha style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
+        </TextoPadrao>
       </div>
+
     </div>
   )
 }

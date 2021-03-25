@@ -9,10 +9,14 @@ display: flex;
 `
 export const TextoPadrao = styled.div`
 font-family: 'Cinzel', serif;
+display: flex;
+align-items: center;
+justify-items: center;
+flex-direction: column;
 color: #fff;
 font-size: large;
 float: left;
-width: 41%;
+width: 100%;
 padding: 45px;
 justify-items: left;
 `
@@ -21,4 +25,9 @@ display: flex;
 width: 100%;
 justify-content: center;
 align-items: center;
+.botao{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 `

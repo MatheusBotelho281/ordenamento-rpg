@@ -36,11 +36,11 @@ export default function Header() {
   }
 
   const Barachiel ={
-    nome:'Barachiel',
+    nome:'Barachiel Norixius',
     historia:'',
     fim:'',
     player:'Alequin',
-    imagem:'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem:'https://media.discordapp.net/attachments/501196063613648900/824782556645556224/Barachiel.png?width=380&height=676'
   }
 
   const Christopher ={
@@ -60,7 +60,7 @@ export default function Header() {
   }
 
   const Halric ={
-    nome:'Halric Sahvot, Guardião Cinzento',
+    nome:'Halric Sahvot, O Guardião Cinzento',
     historia:'Criado por um velho draconato, Halric e seus 2 irmãos se tornaram importantes membros da sociedade de Sarlona, cada um de seu jeito. Ainda jovem, cometeu um erro que seria lembrado por séculos e o perseguiria. Em sua busca por redenção acabou por encontrar Ryu, quem foi seu aprendiz por alguns anos, até os caminhos e objetivos divergirem. O destino do Ordenamento fez com que ambos se encontrassem e participassem do destino do mundo. Halric acabou por se tornar um dos Notáveis na Quarta Era.',
     fim:'Ainda anda pelo mundo, ajudando todos que consegue, sendo um dos poucos com acesso comum à magia.',
     player:'Botelho',
@@ -80,7 +80,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Alequin',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824782556901670912/Ithuryel.png?width=380&height=676'
   }
 
   const Leo ={
@@ -128,7 +128,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Alequin',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824783890140364810/E_mole_nao.png?width=380&height=676'
   }
 
   const Morgana ={
@@ -142,7 +142,7 @@ export default function Header() {
   const Ryu ={
     nome: 'Ryu Straub, deus da sorte',
     historia: 'Ryu foi criado pelo seu avô, Fou-Lu, antigo paladino de Bahamut. Ainda jovem foi obrigado a sair de sua casa após um ataque de Bel à sua vila, Tymora o salvou. Quando pôde sair do orfanato, começou a procurar por respostas, quando acabou encontrando Halric em uma de suas viagens sem rumo. Treinou por alguns anos enquando buscava sentido na vida, até que foi obrigado a seguir seu caminho separado do mestre. Se encontraram anos mais tarde, vindo a fazer parte do Ordenamento.',
-    fim: 'Ascendeu como deus da sorte alguns anos após o fim da guerra, com ajuda de Molly e Halric, contruiu a Ordem de Prata, a Ordem Terceira Prateada e o Monastério do Filho do Dragão. Ainda tenta ajudar todos para manter sua promessa a Tymora.',
+    fim: 'Ascendeu como deus da sorte alguns anos após o fim da guerra, com ajuda de Molly e Halric, construiu a Ordem de Prata, a Ordem Terceira Prateada e o Monastério do Filho do Dragão. Ainda tenta ajudar todos para manter sua promessa a Tymora.',
     player: 'Guto',
     imagem: 'https://media.discordapp.net/attachments/501196063613648900/824029288864284742/Grande_pequeno_Ryu.png?width=380&height=676'
   }
@@ -152,7 +152,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Thomaz',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824784146718785566/Syria.png?width=380&height=676'
   }
 
   const Vark ={
@@ -160,7 +160,7 @@ export default function Header() {
     historia: '',
     fim: '',
     player: 'Alequin',
-    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676'
+    imagem: 'https://media.discordapp.net/attachments/501196063613648900/824782556385902643/Vark.png?width=380&height=676'
   }
 
   const Yuna ={

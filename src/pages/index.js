@@ -17,6 +17,7 @@ position: relative;
 const TextoTr = styled.h1`
 left:0;
 right:0;
+width: auto;
 font-family: 'Cinzel', serif;
 font-size: 5rem;
 color: #fff;
@@ -94,7 +95,7 @@ export default function Home() {
             Nesse momento, o andamento do especial do dia 10/04 está em
           </p>
           <Progress percent='50' status="success" strokeWidth={'3'} />
-          <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
+          <BotaoCampanha style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
         </TextoPadrao>
       </div>
     </div>

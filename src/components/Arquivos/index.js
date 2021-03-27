@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../Modal'
+import Modal from './Modal'
 import { useState } from 'react'
 import { Wrapper, InnerWrapper } from '../PersonagensComponents/Header/styles'
 
@@ -34,6 +34,10 @@ export default function Header(props) {
     opcao: 'Download',
     link: './MM.pdf'
   }
+  const Tasha={
+    img: './TCE.png',
+    link:'./TCE.pdf'
+  }
   function toggleLink(img, opcao, link) {
     setImg(img)
     setOpcao(opcao)
@@ -63,6 +67,8 @@ export default function Header(props) {
             Guia do Mestre</li>
           <li onClick={() => toggleLink(ManualMonstros.img, ManualMonstros.opcao, ManualMonstros.link)}>
             Manual dos Monstros</li>
+          <li onClick={() => toggleLink(Tasha.img, ManualMonstros.opcao, Tasha.link)}>
+            Caldeirão de Tasha</li>
         </ul>
         <Modal
           imagem={img}

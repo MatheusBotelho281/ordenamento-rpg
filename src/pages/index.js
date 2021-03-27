@@ -91,7 +91,7 @@ export default function Home() {
             Nesse momento, o andamento da escrita está em:
           </p>
           <Progress percent='65' status="success" strokeWidth={'3'} />
-          <BotaoCampanha style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
+          <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
         </TextoPadrao>
       </div>
     </div>

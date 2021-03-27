@@ -5,7 +5,8 @@ module.exports = {
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      '/pesonagens' : { page: '/personagens'}
+      '/pesonagens' : { page: '/personagens'},
+      '/arquivos' : { page: '/arquivos' }
     }
   }
 }

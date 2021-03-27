@@ -79,7 +79,7 @@ export default function Home() {
           </DivTr>
         </DivOrg>
         <ListaBotoes>
-          <Botao NomeBotao='Arquivos' />
+          <a href='/arquivos'><Botao NomeBotao='Arquivos' /></a>
           <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
           <Botao NomeBotao='A Guerra' />
           <Botao NomeBotao='Sabedoria' />
@@ -91,11 +91,7 @@ export default function Home() {
             Nesse momento, o andamento da escrita está em:
           </p>
           <Progress percent='65' status="success" strokeWidth={'3'} />
-          <p>
-            Nesse momento, o andamento do especial do dia 10/04 está em
-          </p>
-          <Progress percent='50' status="success" strokeWidth={'3'} />
-          <BotaoCampanha style={{ marginTop: '14%' }}>10/04/2021</BotaoCampanha>
+          <BotaoCampanha style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
         </TextoPadrao>
       </div>
     </div>

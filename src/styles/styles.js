@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ListaBotoes = styled.div`
 padding-right: 10px;
+padding-top: 25px;
 padding-left: 10px;
 align-items: center;
 justify-content: center;

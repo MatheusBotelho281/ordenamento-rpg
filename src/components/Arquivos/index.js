@@ -60,14 +60,13 @@ export default function Header(props) {
     setLink(link)
   }
 
-
   return (
     <Wrapper>
-      <div>
+      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: 'none', borderBottom:'2px solid white'}}>
         <a href='/' className='voltar'>
           Home
         </a>
-        <h1>
+        <h1 style={{filter: 'drop-shadow(20px 10px 4px #000000)'}}>
           {props.pagina}
         </h1>
       </div>

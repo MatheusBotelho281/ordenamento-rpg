@@ -10,9 +10,11 @@ import PopUp from '../components/PopUp'
 import Head from 'next/head'
 
 const DivTr = styled.div`
-height: 225px;
+height: 205px;
 width: 100%;
 position: relative;
+border: none;
+border-bottom: solid 2px white;
 `
 
 const TextoTr = styled.h1`
@@ -26,6 +28,7 @@ text-align: center;
 position: absolute;
 transition: all 0.5s;
 cursor:default;
+filter: drop-shadow(20px 10px 4px #000000);
 `
 
 const MapaKhorInicio = styled.img`

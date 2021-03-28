@@ -181,11 +181,11 @@ export default function Header() {
 
   return (
     <Wrapper>
-      <div>
+      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', border: 'none', borderBottom:'2px solid white'}}>
         <a href='/' className='voltar'>
           Home
         </a>
-        <h1>
+        <h1 style={{filter: 'drop-shadow(20px 10px 4px #000000)'}}>
           Personagens
       </h1>
       </div>

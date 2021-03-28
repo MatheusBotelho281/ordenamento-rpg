@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
 import PopUp from '../components/PopUp'
+import Head from 'next/head'
 
 const DivTr = styled.div`
 height: 225px;
@@ -57,7 +58,7 @@ export default function Home() {
   const [TituloTr, setTituloTr] = useState(false)
   const [videoPopUp, setVideoPopUp] = useState(false)
 
-  function togglePopUp(){
+  function togglePopUp() {
     setVideoPopUp(true)
   }
   function onHover() {
@@ -70,6 +71,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>O Ordenamento</title>
+      </Head>
       {videoPopUp && <PopUp close={() => setVideoPopUp(false)} />}
       <div>
         <DivOrg>

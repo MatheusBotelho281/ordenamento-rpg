@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const Container =  styled.div`
+height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +11,7 @@ export const Container =  styled.div`
 
 export const Input = styled.input`
     padding: 10px;
-    width: 350px;
+    width: 360px;
     height: 40px;
     border: none;
     background: #ecf0f1;
@@ -24,20 +25,22 @@ export const Button = styled.button`
     width: 360px;
     height: 50px;
     border: none;
-    border-radius: 8px;
-    background: ${props => props.primary ? "palevioletred" : "orange" };;
+    border-radius: none;
+    cursor: pointer;
+    background: ${props => props.primary ? "darkred" : "darkred" };;
     color: #fff;
-    margin: 10px;
+    margin: 5px;
     font-weight: bold;
 `; 
 
 export const Title = styled.p`
     font-weight: bold;
-    color: #9b59b6;
+    font-family: 'Cinzel', sans-serif;
+    color: white;
     font-size: 22px;
 `
 
-export const HomeButtom = styled.h1`
+export const HomeButtom = styled.h2`
 font-family: 'Cinzel', sans-serif;
 color: white;
 cursor: pointer;

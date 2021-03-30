@@ -10,7 +10,7 @@ export default function LoginPage() {
 
   const login = () => {
     firebase.auth().signInWithEmailAndPassword(email, pass).then(user => {
-      console.log(user)
+      window.location.href(user)
 		})
   }
   
@@ -23,15 +23,17 @@ export default function LoginPage() {
 
   return (
    <Container> 
-     <Title>Seja bem vindo, faça login para continuar </Title>
+     <Title>"Fale, amigo, e entre."</Title>
+     <div style={{display: 'flex',flexDirection: 'column', alignItems: 'center',justifyContent: 'center',marginBottom: '15px'}}>
       <Input type="email" placeholder="Informe seu email"
       value={email} onChange={e=> setEmail(e.target.value)}
       />
       <Input type="password" placeholder="Informe sua senha"
       value={pass} onChange={e=> setPass(e.target.value)}
       />
-      <Button onClick={login}> Entrar com e-mail agora </Button>
-      <Button primary onClick={cadastro}> Cadastre com e-mail agora </Button>
+      </div>
+      <Button onClick={login}> Entrar </Button>
+      <Button primary onClick={cadastro}> Cadastrar </Button>
       <a href="/"><HomeButtom>Home</HomeButtom></a>
    </Container>   
   );

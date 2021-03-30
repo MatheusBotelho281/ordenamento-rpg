@@ -6,10 +6,10 @@ const config = {
   projectId: "ordenamento7",
   storageBucket: "ordenamento7.appspot.com",
   messagingSenderId: "389073548027",
-  appId: "1:389073548027:web:c7816dacd67706588b765e",
-  measurementId: "G-73GT2ZHLXB"
+  appId: "1:389073548027:web:82bbbdc896d3cb0f8b765e",
+  measurementId: "G-1D5K6XHZTL"
 };
 
-firebase.initializeApp(config);
+  firebase.initializeApp;
 
 export default firebase;

@@ -90,8 +90,8 @@ export default function Home() {
           <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
           <Botao NomeBotao='A Guerra' />
           <Botao NomeBotao='Sabedoria' />
-          <Botao NomeBotao='Os 7' />
           <Botao NomeBotao='Panteão' />
+          <a href='/login'><Botao NomeBotao='WIP' /></a>
         </ListaBotoes>
         <TextoPadrao>
           <p>

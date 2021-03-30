@@ -6,7 +6,9 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/pesonagens' : { page: '/personagens'},
-      '/arquivos' : { page: '/arquivos' }
+      '/arquivos' : { page: '/arquivos' },
+      '/login' : { page: '/login' },
+      '/fichaonline' : { page : '/fichaonline' }
     }
   }
 }

@@ -1,19 +1,18 @@
 import firebase from 'firebase'
 
-const config = {
-  apiKey: "AIzaSyCG_sJPQxbNg5QOf9lKNtZVy9uTHOp2dO8",
-  authDomain: "ordenamento7.firebaseapp.com",
-  projectId: "ordenamento7",
-  storageBucket: "ordenamento7.appspot.com",
-  messagingSenderId: "389073548027",
-  appId: "1:389073548027:web:82bbbdc896d3cb0f8b765e",
-  measurementId: "G-1D5K6XHZTL"
+const firebaseConfig  = {
+  apiKey: "AIzaSyDPgiszY7ETn6UAQxraEMCF3kohi1TS0JQ",
+  authDomain: "ordenamento-63cba.firebaseapp.com",
+  projectId: "ordenamento-63cba",
+  storageBucket: "ordenamento-63cba.appspot.com",
+  messagingSenderId: "513694477561",
+  appId: "1:513694477561:web:8d63c3beb075ac36090628",
+  measurementId: "G-JPFPQRF1VC"
 };
 
-if (!firebase.apps.length) {
-  firebase.initializeApp({});
-}else {
-  firebase.app(); // if already initialized, use that one
+
+if(!firebase.apps.length){
+  firebase.initializeApp(firebaseConfig)
 }
 
 export default firebase;

@@ -39,7 +39,7 @@ li{
 
 export const InnerWrapper = styled.div`
 display: flex;
-height: 74vh;
+height: auto;
 flex-direction: row;
 align-items: center;
 justify-content: center;

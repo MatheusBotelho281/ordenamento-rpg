@@ -10,6 +10,10 @@ const config = {
   measurementId: "G-1D5K6XHZTL"
 };
 
-  firebase.initializeApp;
+if (!firebase.apps.length) {
+  firebase.initializeApp({});
+}else {
+  firebase.app(); // if already initialized, use that one
+}
 
 export default firebase;

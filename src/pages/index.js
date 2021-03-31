@@ -1,5 +1,5 @@
 import Botao from '../components/Botoes'
-import { ListaBotoes, TextoPadrao, DivOrg } from '../styles/styles.js'
+import { Time, ListaBotoes, TextoPadrao, DivOrg } from '../styles/styles.js'
 import { useState } from 'react'
 import React from 'react';
 import styled, { withTheme } from 'styled-components'
@@ -11,10 +11,24 @@ import Head from 'next/head'
 
 const DivTr = styled.div`
 height: 205px;
-width: 100%;
+width: 45%;
 position: relative;
 border: none;
-border-bottom: solid 2px white;
+.team{
+  position: absolute;
+  margin-top: 8.2%;
+  left: -57.8%;
+  width: 200px;
+  height: 70px;
+  color: white;
+  display: flex;
+  font-family: 'Cinzel', serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+}
 `
 
 const TextoTr = styled.h1`
@@ -56,10 +70,13 @@ justify-content: center;
 
 `
 
+
 export default function Home() {
 
   const [TituloTr, setTituloTr] = useState(false)
   const [videoPopUp, setVideoPopUp] = useState(false)
+  const [cor, setCor] = useState('#8c041c')
+  const [nomeBotao, setNomeBotao] = useState('Fogo')
 
   function togglePopUp() {
     setVideoPopUp(true)
@@ -71,6 +88,15 @@ export default function Home() {
   function onLeave() {
     setTituloTr(false)
   }
+  function ChangeTeam() {
+    if (cor == '#8c041c') {
+      setCor('#084973')
+      setNomeBotao('Gelo')
+    } else {
+      setCor('#8c041c')
+      setNomeBotao('Fogo')
+    }
+  }
 
   return (
     <div>
@@ -81,25 +107,29 @@ export default function Home() {
       <div>
         <DivOrg>
           <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
+            <buttom onClick={ChangeTeam} style={{backgroundColor: cor }} className='team'>{nomeBotao}</buttom>
             <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
             <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>
           </DivTr>
         </DivOrg>
-        <ListaBotoes>
-          <a href='/arquivos'><Botao NomeBotao='Arquivos' /></a>
-          <a href='/personagens'><Botao NomeBotao='Personagens' /></a>
-          <Botao NomeBotao='A Guerra' />
-          <Botao NomeBotao='Sabedoria' />
-          <Botao NomeBotao='Panteão' />
-          <a href='/login'><Botao NomeBotao='WIP' /></a>
-        </ListaBotoes>
-        <TextoPadrao>
+        <div style={{width: '100%', display: 'flex'}}>
+          <ListaBotoes>
+            <a href='/arquivos'><Botao color={cor} NomeBotao='Arquivos' /></a>
+            <a href='/personagens'><Botao color={cor} NomeBotao='Personagens' /></a>
+            <Botao color={cor} NomeBotao='A Guerra' />
+            <Botao color={cor} NomeBotao='Sabedoria' />
+            <Botao color={cor} NomeBotao='Panteão' />
+            <a href='/login'><Botao color={cor} NomeBotao='WIP' /></a>
+          </ListaBotoes>
+
+          <TextoPadrao>
           <p>
             Nesse momento, o andamento da escrita está em:
           </p>
           <Progress percent='65' status="success" strokeWidth={'3'} />
           <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
         </TextoPadrao>
+        </div>
       </div>
     </div>
   )

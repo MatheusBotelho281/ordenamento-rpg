@@ -40,6 +40,7 @@ float: right;
 
 const BotaoCampanha = styled.button`
 font-size: larger;
+box-shadow: 5px 8px 10px black;
 padding: 3px;
 color:rgb(32,32,32);
 background-color: white;
@@ -62,6 +63,7 @@ export default function Home() {
   const [TituloTr, setTituloTr] = useState(false)
   const [videoPopUp, setVideoPopUp] = useState(false)
   const [cor, setCor] = useState('#8c041c')
+  const [cor1, setCor1] = useState('#250103')
   const [nomeBotao, setNomeBotao] = useState('Fogo')
 
   function togglePopUp() {
@@ -77,9 +79,11 @@ export default function Home() {
   function ChangeTeam() {
     if (cor == '#8c041c') {
       setCor('#084973')
+      setCor1('#011226')
       setNomeBotao('Gelo')
     } else {
       setCor('#8c041c')
+      setCor1('#250103')
       setNomeBotao('Fogo')
     }
   }

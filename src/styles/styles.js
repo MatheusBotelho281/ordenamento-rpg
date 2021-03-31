@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ListaBotoes = styled.div`
 padding-right: 10px;
 border-right: 2px solid white;
+box-shadow: 10px 5px 5px black;
 padding-top: 25px;
 padding-left: 10px;
 width: 16%;
@@ -13,6 +14,7 @@ display: flex;
 flex-direction: column;
 `
 export const TextoPadrao = styled.div`
+background-color: ${props => props.bgColor};
 font-family: 'Cinzel', serif;
 width: 100%;
 display: flex;
@@ -31,12 +33,14 @@ border-bottom: solid 2px white;
 width: 100%;
 justify-content: center;
 align-items: center;
+box-shadow: 250px 9px 8px black;
 .botao{
   align-items: center;
   justify-content: center;
   display: flex;
 }
 .team{
+  box-shadow: 5px 8px 10px black;
   position: absolute;
   left: 1.5%;
   width: 200px;

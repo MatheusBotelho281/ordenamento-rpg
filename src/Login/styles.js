@@ -7,6 +7,10 @@ height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('./porta.png');
+    background-repeat: no-repeat;
+    background-size: 600px 800px;
+    background-position: center;
 `;
 
 export const Input = styled.input`
@@ -27,7 +31,7 @@ export const Button = styled.button`
     border: none;
     border-radius: none;
     cursor: pointer;
-    background: ${props => props.primary ? "darkred" : "darkred" };;
+    background: ${props => props.primary ? "#8c041c" : "#8c041c" };;
     color: #fff;
     margin: 5px;
     font-weight: bold;

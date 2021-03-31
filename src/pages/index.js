@@ -14,21 +14,7 @@ height: 205px;
 width: 45%;
 position: relative;
 border: none;
-.team{
-  position: absolute;
-  margin-top: 8.2%;
-  left: -57.8%;
-  width: 200px;
-  height: 70px;
-  color: white;
-  display: flex;
-  font-family: 'Cinzel', serif;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
 
-}
 `
 
 const TextoTr = styled.h1`
@@ -106,8 +92,8 @@ export default function Home() {
       {videoPopUp && <PopUp close={() => setVideoPopUp(false)} />}
       <div>
         <DivOrg>
+          <buttom onClick={ChangeTeam} style={{backgroundColor: cor }} className='team'>{nomeBotao}</buttom>
           <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
-            <buttom onClick={ChangeTeam} style={{backgroundColor: cor }} className='team'>{nomeBotao}</buttom>
             <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
             <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>
           </DivTr>

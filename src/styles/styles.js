@@ -36,4 +36,18 @@ align-items: center;
   justify-content: center;
   display: flex;
 }
+.team{
+  position: absolute;
+  left: 1.5%;
+  width: 200px;
+  height: 70px;
+  color: white;
+  display: flex;
+  font-family: 'Cinzel', serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+}
 `

@@ -10,16 +10,19 @@ import PopUp from '../components/PopUp'
 import Head from 'next/head'
 
 const DivTr = styled.div`
+align-items: center;
+justify-content: center;
+display: flex;
 height: 205px;
-width: 45%;
+width: 65%;
 position: relative;
 border: none;
-
+@media only screen and(max-width: 600px){
+  width: 100%;
+}
 `
 
 const TextoTr = styled.h1`
-left:0;
-right:0;
 width: auto;
 font-family: 'Cinzel', serif;
 font-size: 5rem;
@@ -29,6 +32,24 @@ position: absolute;
 transition: all 0.5s;
 cursor:default;
 filter: drop-shadow(20px 10px 4px #000000);
+@media only screen and (max-width: 1600px){
+  font-size: 75px;
+}
+@media only screen and (max-width: 1325px){
+  font-size: 70px;
+}
+@media only screen and (max-width: 1240px){
+  font-size: 65px;
+}
+@media only screen and (max-width: 1145px){
+  font-size: 60px;
+}
+@media only screen and (max-width: 1055px){
+  font-size: 55px;
+}
+@media only screen and (max-width: 480px){
+  font-size: 40px;
+}
 `
 
 const MapaKhorInicio = styled.img`
@@ -96,7 +117,6 @@ export default function Home() {
       {videoPopUp && <PopUp close={() => setVideoPopUp(false)} />}
       <div>
         <DivOrg>
-          <buttom onClick={ChangeTeam} style={{backgroundColor: cor }} className='team'>{nomeBotao}</buttom>
           <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
             <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
             <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>

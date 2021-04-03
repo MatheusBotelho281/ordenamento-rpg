@@ -5,13 +5,20 @@ padding-right: 10px;
 border-right: 2px solid white;
 box-shadow: 10px 5px 5px black;
 padding-top: 25px;
-padding-left: 10px;
+padding-left: 0.5%;
 width: 16%;
 height: 100vh;
 align-items: start;
 justify-content: start;
 display: flex;
 flex-direction: column;
+@media only screen and (max-width: 1600px){
+  width: 18%;
+  padding-left: 1px;
+}
+@media only screen and (max-width: 1200px){
+  display: none;
+}
 `
 export const TextoPadrao = styled.div`
 background-color: ${props => props.bgColor};

@@ -41,6 +41,9 @@ width: 100%;
 justify-content: center;
 align-items: center;
 box-shadow: 250px 9px 8px black;
+@media only screen and (max-width: 1600px){
+  box-shadow: 5px 9px 8px black;
+}
 .botao{
   align-items: center;
   justify-content: center;
@@ -60,5 +63,18 @@ box-shadow: 250px 9px 8px black;
   text-align: center;
   cursor: pointer;
 
+}
+`
+
+export const Icone = styled.img`
+position: absolute;
+width: 40px;
+top: 5%;
+left: 5%;
+cursor: pointer;
+z-index: 50;
+display: none;
+@media only screen and (max-width: 1200px){
+  display: flex;
 }
 `

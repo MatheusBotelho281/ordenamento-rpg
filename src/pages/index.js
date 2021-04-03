@@ -1,5 +1,5 @@
 import Botao from '../components/Botoes'
-import { Time, ListaBotoes, TextoPadrao, DivOrg } from '../styles/styles.js'
+import { Time, ListaBotoes, TextoPadrao, DivOrg, Icone } from '../styles/styles.js'
 import { useState } from 'react'
 import React from 'react';
 import styled, { withTheme } from 'styled-components'
@@ -8,6 +8,7 @@ import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
 import PopUp from '../components/PopUp'
 import Head from 'next/head'
+import Menu from '../components/Menu';
 
 const DivTr = styled.div`
 align-items: center;
@@ -86,7 +87,18 @@ export default function Home() {
   const [cor, setCor] = useState('#8c041c')
   const [cor1, setCor1] = useState('#250103')
   const [nomeBotao, setNomeBotao] = useState('Fogo')
+  const [menu, setMenu] = useState('./menu.png')
+  const [menuPosition, setMenuPosition] = useState('-100%')
 
+  function toggleMenuIcon() {
+    if (menu == './menu.png') {
+      setMenu('./close.png')
+      setMenuPosition('0')
+    } else {
+      setMenu('./menu.png')
+      setMenuPosition('-100%')
+    }
+  }
   function togglePopUp() {
     setVideoPopUp(true)
   }
@@ -111,6 +123,8 @@ export default function Home() {
 
   return (
     <div>
+      <Icone onClick={toggleMenuIcon} src={menu} />
+      <Menu esquerda={menuPosition} />
       <Head>
         <title>O Ordenamento</title>
       </Head>
@@ -122,7 +136,7 @@ export default function Home() {
             <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>
           </DivTr>
         </DivOrg>
-        <div style={{width: '100%', display: 'flex'}}>
+        <div style={{ width: '100%', display: 'flex' }}>
           <ListaBotoes>
             <a href='/arquivos'><Botao color={cor} NomeBotao='Arquivos' /></a>
             <a href='/personagens'><Botao color={cor} NomeBotao='Personagens' /></a>
@@ -133,14 +147,15 @@ export default function Home() {
           </ListaBotoes>
 
           <TextoPadrao>
-          <p>
-            Nesse momento, o andamento da escrita está em:
+            <p>
+              Nesse momento, o andamento da escrita está em:
           </p>
-          <Progress percent='65' status="success" strokeWidth={'3'} />
-          <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
-        </TextoPadrao>
+            <Progress percent='65' status="success" strokeWidth={'3'} />
+            <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
+          </TextoPadrao>
         </div>
       </div>
     </div>
   )
 }
+

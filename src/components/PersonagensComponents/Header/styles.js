@@ -16,7 +16,7 @@ flex-direction: column;
   transition: all 0.1s;
   cursor: pointer;
   :hover{
-    border-bottom: white 1px solid;
+    border-bottom: #8c041c 1px solid;
   }
 }
 h1{

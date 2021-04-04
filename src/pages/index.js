@@ -9,6 +9,7 @@ import "react-sweet-progress/lib/style.css";
 import PopUp from '../components/PopUp'
 import Head from 'next/head'
 import Menu from '../components/Menu';
+import { Line, Circle } from 'rc-progress';
 
 const DivTr = styled.div`
 align-items: center;
@@ -150,8 +151,11 @@ export default function Home() {
             <p>
               Nesse momento, o andamento da escrita está em:
           </p>
-            <Progress percent='65' status="success" strokeWidth={'3'} />
-            <BotaoCampanha onClick={togglePopUp} style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
+            <Line percent="97" strokeWidth="1" strokeColor="#8c041c" />
+            <p style={{ marginBottom: 'none', fontSize: '35px', fontWeight: '700' }}>97%</p>
+            <BotaoCampanha
+              // onClick={togglePopUp}
+              style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
           </TextoPadrao>
         </div>
       </div>

@@ -33,6 +33,9 @@ font-size: large;
 float: left;
 padding: 45px;
 justify-items: left;
+.barra{
+  color: white!important;
+}
 `
 export const DivOrg = styled.div`
 display: flex;

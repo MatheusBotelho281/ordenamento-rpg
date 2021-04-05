@@ -61,3 +61,7 @@ font-family: 'Cinzel', sans-serif;
 color: red;
 text-shadow: 1px 0px #ff4747;
 `
+export const SuccessMessage = styled.p`
+font-family: 'Cinzel', sans-serif;
+color: #17bf17;
+text-shadow: 1px 0px #0a8c0a;` 

@@ -55,3 +55,9 @@ transition: all 0.1s;
     border-bottom: 2px solid white;
 }
 `
+
+export const ErrorMessage = styled.p`
+font-family: 'Cinzel', sans-serif;
+color: red;
+text-shadow: 1px 0px #ff4747;
+`

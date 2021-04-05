@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { HomeButtom, Container, Input, Button, Title } from './styles'
+import { HomeButtom, Container, Input, Button, Title, ErrorMessage } from './styles'
 import firebase from '../data/Firebase';
 import { useRouter } from 'next/router';
+import { api } from '../libs/Api'
 
 export default function LoginPage() {
 
@@ -12,20 +13,21 @@ export default function LoginPage() {
   const Router = useRouter();
 
   const login = () => {
-    firebase.auth().signInWithEmailAndPassword(email, pass).then(user => {
-      if (user) {
-        Router.push('/')
-      }
-      else {
-        setErroDeViado('Não ta conseguindo?')
-      }
+    api.post('/register/login', {
+      Username: email,
+      Password: pass
     })
+      .then(res => console.log(res.data))
+      .catch(err => setErroDeViado(err.response.data.error))
   }
 
   const cadastro = () => {
-    firebase.auth().createUserWithEmailAndPassword(email, pass).then(user => {
-      console.log(user)
+    api.post('/register', {
+      Username: email,
+      Password: pass
     })
+      .then(res => console.log(res.data))
+      .catch(err => setErroDeViado(err.response.data.error))
   }
 
 
@@ -40,9 +42,9 @@ export default function LoginPage() {
           value={pass} onChange={e => setPass(e.target.value)}
         />
       </div>
-      {erroDeViado && <p>{erroDeViado}</p>}
       <Button onClick={login}> Entrar </Button>
       <Button primary onClick={cadastro}> Cadastrar </Button>
+      {erroDeViado && <ErrorMessage>{erroDeViado}*</ErrorMessage>}
       <a href="/"><HomeButtom>Home</HomeButtom></a>
     </Container>
   );

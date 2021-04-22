@@ -10,6 +10,7 @@ import PopUp from '../components/PopUp'
 import Head from 'next/head'
 import Menu from '../components/Menu';
 import { Line, Circle } from 'rc-progress';
+import Post from '../components/Post';
 
 const DivTr = styled.div`
 align-items: center;
@@ -144,18 +145,49 @@ export default function Home() {
             <Botao color={cor} NomeBotao='A Guerra' />
             <Botao color={cor} NomeBotao='Sabedoria' />
             <Botao color={cor} NomeBotao='Panteão' />
-            <a href='/login'><Botao color={cor} NomeBotao='WIP' /></a>
+            <a href='/login'><Botao color={cor} NomeBotao='Table Project' /></a>
           </ListaBotoes>
 
           <TextoPadrao>
-            <p>
-              Nesse momento, o andamento da escrita está em:
-          </p>
-            <Line percent="97" strokeWidth="1" strokeColor="#8c041c" />
-            <p style={{ marginBottom: 'none', fontSize: '35px', fontWeight: '700' }}>97%</p>
-            <BotaoCampanha
-              // onClick={togglePopUp}
-              style={{ marginTop: '14%' }}>Aguarde...</BotaoCampanha>
+            {/* <Post
+              data=""
+              mestre=""
+              titulo=""
+              conteudo=""
+              borda="white 3px solid CASO TENHA IMAGEM"
+              imagem="Sempre 3840x2160"
+              conteudo1=""
+               />
+               <div className="divisoria"></div> */}
+            <Post
+              data="22/04/21"
+              mestre="Botelho"
+              titulo="A Campanha dos 7 avança"
+              conteudo="Logo após se reunirem, o grupo, liderado por Beorth, começa a buscar respostas
+              por Fairhaven, indo atrás da descriptigrafia da mensagem de Molly."
+              borda="white 3px solid"
+              imagem="./tiamat.png"
+              conteudo1="Uma nova problematica surge, Tiamat está começando a reaparecer na história de maneira
+              ativa, mostrando-se sem medo e com um objetivo, retornar ao mundo."
+            />
+            <div className="divisoria"></div>
+            <Post
+              data="22/04/21"
+              mestre="Botelho"
+              titulo="Atualização de Posts Concluída"
+              conteudo="Para publicar algum post será necessário o acesso ao código do site, uma
+            vez que não existe um sistema bom de publicações, e não existe a necessidade disso no 
+            momento"
+            />
+            <div className="divisoria"></div>
+            <Post
+              data="22/04/21"
+              mestre="Botelho"
+              titulo="Início dos Posts no site"
+              conteudo="Agora vão ter certas atualizações aqui, sempre que algo mudar nas
+            sessões e for importante o suficiente, virá para o site."
+              borda="white 3px solid"
+              imagem="./Wallpaper Ordenamento 2.png" />
           </TextoPadrao>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function LoginPage() {
     })
       .then(res => HandleTokenSave(res.data))
       .catch(err => {
-        setErroDeViado(err.response.data.error)
+        setError(err.response.data.error)
         setSucesso(false)
       })
   }

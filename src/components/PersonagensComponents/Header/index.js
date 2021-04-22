@@ -1,7 +1,8 @@
 import React from 'react'
-import { InnerWrapper, Wrapper } from './styles'
+import { InnerWrapper, Wrapper, Menu } from './styles'
 import Modal from '../Modal'
 import { useState } from 'react'
+import { Icone } from '../../../styles/styles'
 
 export default function Header() {
 
@@ -9,6 +10,7 @@ export default function Header() {
   const [historia, setHistoria] = useState('História')
   const [fim, setFim] = useState('Destino')
   const [player, setPlayer] = useState('')
+  const [esquerda, setEsquerda] = useState('0')
   const [linkImagem, setLinkImagem] = useState('https://media.discordapp.net/attachments/501196063613648900/824023816002994206/placeholdereocaralho.png?width=380&height=676')
 
   const Alazar = {

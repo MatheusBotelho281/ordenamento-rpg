@@ -7,7 +7,8 @@ box-shadow: 10px 5px 5px black;
 padding-top: 25px;
 padding-left: 0.5%;
 width: 16%;
-height: 100vh;
+height: auto;
+overflow: hidden;
 align-items: start;
 justify-content: start;
 display: flex;
@@ -35,6 +36,14 @@ padding: 45px;
 justify-items: left;
 .barra{
   color: white!important;
+}
+.divisoria{
+  width: 70%;
+  height:1px;
+  background-color: white;
+  @media only screen and (max-width: 1024px){
+    width: 100%;
+  }
 }
 `
 export const DivOrg = styled.div`
@@ -75,7 +84,7 @@ width: 40px;
 top: 5%;
 left: 5%;
 cursor: pointer;
-z-index: 50;
+z-index: 500;
 display: none;
 @media only screen and (max-width: 1200px){
   display: flex;

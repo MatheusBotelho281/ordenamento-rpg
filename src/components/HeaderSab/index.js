@@ -17,7 +17,6 @@ export default function Header() {
 
   return (
     <div>
-      <img src={} />
       <button onClick={RandomNumberGenerate}>Gerar</button>
     </div>
   )

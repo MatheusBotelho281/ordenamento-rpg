@@ -171,6 +171,7 @@ export default function Home() {
               conteudo1="Keihas e Aster conseguiram ver o que foi causado pela liberação do poder. Os únicos que tem
               alguma ideia do que aconteceu são Aster e Beorth."
                />
+               <div className="divisoria"></div>
                <Post
               data="29/04/21"
               mestre="Botelho"

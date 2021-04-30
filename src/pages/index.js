@@ -159,6 +159,33 @@ export default function Home() {
               conteudo1=""
                />
                <div className="divisoria"></div> */}
+                              <Post
+              data="29/04/21"
+              mestre="Botelho"
+              titulo="O mal é liberto"
+              conteudo="No final do dia algo peculiar acontece, uma força se liberta, surtos de magia acontecem
+              por todo o mundo, aparentemente apenas feiticeiros foram afetados dessa vez, mas não se sabe
+              se existem mais consequência para tal acontecimento."
+              borda="white 3px solid"
+              imagem="./olhonosceus.png"
+              conteudo1="Keihas e Astes conseguiram ver o que foi causado pela liberação do poder. Os únicos que tem
+              alguma ideia do que aconteceu são Aster e Beorth."
+               />
+               <Post
+              data="29/04/21"
+              mestre="Botelho"
+              titulo="Um dia ''comum'' em uma cidade complexa"
+              conteudo="Após algum tempo em busca de um passe para a biblioteca da universidade, Aster consegue
+              acesso ao local com uma carta de recomendação da Palaestra. No mesmo local Keihas conseguiu
+              ganhar um campeonato no meio dos paladinos de Fairhaven (Com muita bebida, é claro!)."
+              borda="white 3px solid"
+              imagem="./palaestra.png"
+              conteudo1="Enquanto o grupo liderado por Beorth conseguia desvendar o misterioso bilhete de Molly,
+              Gaia liderava Jade e Citra pela cidade para conhecer o local e conseguir alguma informação
+              eventual (Conseguiram no máximo uma goblin que não fala nem a própria língua direito). Garfiel e Luggir 
+              apenas andaram até o clericado local e aproveitaram o dia até o momento do discurso do rei."
+               />
+               <div className="divisoria"></div>
             <Post
               data="22/04/21"
               mestre="Botelho"

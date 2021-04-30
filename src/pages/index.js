@@ -168,7 +168,7 @@ export default function Home() {
               se existem mais consequência para tal acontecimento."
               borda="white 3px solid"
               imagem="./olhonosceus.png"
-              conteudo1="Keihas e Astes conseguiram ver o que foi causado pela liberação do poder. Os únicos que tem
+              conteudo1="Keihas e Aster conseguiram ver o que foi causado pela liberação do poder. Os únicos que tem
               alguma ideia do que aconteceu são Aster e Beorth."
                />
                <Post

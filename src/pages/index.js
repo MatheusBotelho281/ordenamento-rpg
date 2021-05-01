@@ -159,7 +159,23 @@ export default function Home() {
               conteudo1=""
                />
                <div className="divisoria"></div> */}
-                              <Post
+            <Post
+              data="01/05/21"
+              mestre="Botelho"
+              titulo="Para aqueles que não tem nada pra fazer..."
+              conteudo="Sobre o Ordenamento... Seria interessante que alguns escreveram
+               as histórias de seus personagens
+                de maneira extremamente detalhada, para formar uma espécie 
+                de livro com os contos do ordenamento. Cada um do seu jeito 
+                e sobre os personagens que quiser, claro, desde que seja seu ou que tenha a autorização do dono."
+              borda="white 3px solid"
+              imagem="./livros.png"
+              conteudo1="Escrevam de tudo, desde o início, até mesmo sobre a vida dos mestres ou pais 
+              de cada um. Tudo o que puderem. Se conseguirem finalizar algo ou precisarem de ajuda avisem. 
+              Sempre que tiverem algo 100% finalizado enviem em formato word no servidor do discord."
+            />
+            <div className="divisoria"></div>
+            <Post
               data="29/04/21"
               mestre="Botelho"
               titulo="O mal é liberto"
@@ -170,9 +186,9 @@ export default function Home() {
               imagem="./olhonosceus.png"
               conteudo1="Keihas e Aster conseguiram ver o que foi causado pela liberação do poder. Os únicos que tem
               alguma ideia do que aconteceu são Aster e Beorth."
-               />
-               <div className="divisoria"></div>
-               <Post
+            />
+            <div className="divisoria"></div>
+            <Post
               data="29/04/21"
               mestre="Botelho"
               titulo="Um dia ''comum'' em uma cidade complexa"
@@ -185,8 +201,8 @@ export default function Home() {
               Gaia liderava Jade e Citra pela cidade para conhecer o local e conseguir alguma informação
               eventual (Conseguiram no máximo uma goblin que não fala nem a própria língua direito). Garfiel e Luggir 
               apenas andaram até o clericado local e aproveitaram o dia até o momento do discurso do rei."
-               />
-               <div className="divisoria"></div>
+            />
+            <div className="divisoria"></div>
             <Post
               data="22/04/21"
               mestre="Botelho"

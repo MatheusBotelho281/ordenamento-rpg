@@ -142,9 +142,9 @@ export default function Home() {
           <ListaBotoes>
             <a href='/arquivos'><Botao color={cor} NomeBotao='Arquivos' /></a>
             <a href='/personagens'><Botao color={cor} NomeBotao='Personagens' /></a>
-            <Botao color={cor} NomeBotao='A Guerra' />
+            <Botao color={cor} NomeBotao='Mesas Atuais' />
+            <Botao color={cor} NomeBotao='Próximas Mesas' />
             <Botao color={cor} NomeBotao='Sabedoria' />
-            <Botao color={cor} NomeBotao='Panteão' />
             <a href='/login'><Botao color={cor} NomeBotao='Table Project' /></a>
           </ListaBotoes>
 

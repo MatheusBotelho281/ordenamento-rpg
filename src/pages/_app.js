@@ -1,12 +1,7 @@
 import '../styles/globals.css'
-import { TokenProvider } from '../Contexts/TokenContext'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <TokenProvider>
-      <Component {...pageProps} />
-    </TokenProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

@@ -9,7 +9,7 @@ color:white;
 background-color: transparent;
 border: none;
 border-bottom: 2px solid transparent;
-width: 10rem;
+width: 11rem;
 height: 3.6rem;
 transition-duration: 0.2s;
 cursor: pointer;

@@ -1,5 +1,5 @@
 import Botao from '../components/Botoes'
-import { Time, ListaBotoes, TextoPadrao, DivOrg, Icone } from '../styles/styles.js'
+import { Time, ListaBotoes, TextoPadrao, DivOrg, Icone, AnchorStart } from '../styles/styles.js'
 import { useState } from 'react'
 import React from 'react';
 import styled, { withTheme } from 'styled-components'
@@ -78,7 +78,6 @@ const LocalBotaoCam = styled.div`
 display: flex;
 align-items:center;
 justify-content: center;
-
 `
 
 
@@ -125,6 +124,9 @@ export default function Home() {
 
   return (
     <div>
+      <AnchorStart href="#start" style={{display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgb(32,32,32)',border: 'solid 1px white', borderRadius: '6px', width: '50px', height: '50px', position: 'fixed', bottom: '2%', right: '2%', cursor: 'pointer'}}>
+      <svg transform="rotate(-90)" fill="white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+      </AnchorStart>
       <Icone onClick={toggleMenuIcon} src={menu} />
       <Menu esquerda={menuPosition} />
       <Head>
@@ -132,7 +134,7 @@ export default function Home() {
       </Head>
       {videoPopUp && <PopUp close={() => setVideoPopUp(false)} />}
       <div>
-        <DivOrg>
+        <DivOrg id="start">
           <DivTr onMouseOver={onHover} onMouseLeave={onLeave}>
             <TextoTr style={{ opacity: TituloTr ? '0' : '1' }}>O Ordenamento</TextoTr>
             <TextoTr style={{ opacity: TituloTr ? '1' : '0' }}>A Campanha dos 7</TextoTr>

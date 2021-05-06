@@ -90,3 +90,10 @@ display: none;
   display: flex;
 }
 `
+
+export const AnchorStart = styled.a`
+transition: all 0.4s;
+:hover{
+  transform: translateY(3px);
+}
+`

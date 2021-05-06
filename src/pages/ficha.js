@@ -45,7 +45,7 @@ export default function ficha() {
   const Dados = styled.div`
   margin-top: 3%;
   margin-left: 3%;
-  widht: auto;
+  width: auto;
   height: auto;
   input{
     margin: 10px;

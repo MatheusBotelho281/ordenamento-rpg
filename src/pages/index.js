@@ -11,6 +11,7 @@ import Head from 'next/head'
 import Menu from '../components/Menu';
 import { Line, Circle } from 'rc-progress';
 import Post from '../components/Post';
+import PostComLink from '../components/Post copy';
 
 const DivTr = styled.div`
 align-items: center;
@@ -124,8 +125,8 @@ export default function Home() {
 
   return (
     <div>
-      <AnchorStart href="#start" style={{display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgb(32,32,32)',border: 'solid 1px white', borderRadius: '6px', width: '50px', height: '50px', position: 'fixed', bottom: '2%', right: '2%', cursor: 'pointer'}}>
-      <svg transform="rotate(-90)" fill="white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+      <AnchorStart href="#start" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgb(32,32,32)', border: 'solid 1px white', borderRadius: '6px', width: '50px', height: '50px', position: 'fixed', bottom: '2%', right: '2%', cursor: 'pointer' }}>
+        <svg transform="rotate(-90)" fill="white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" /></svg>
       </AnchorStart>
       <Icone onClick={toggleMenuIcon} src={menu} />
       <Menu esquerda={menuPosition} />
@@ -161,6 +162,18 @@ export default function Home() {
               conteudo1=""
                />
                <div className="divisoria"></div> */}
+            <PostComLink
+              data="10/05/21"
+              mestre="Botelho"
+              titulo="G vkxykmaoigu ykrbgmks yk gvxudosg!"
+              link="https://youtu.be/QL9P84VuMk8"
+              nomeTagA="..."
+              conteudo=""
+              borda="white 3px solid"
+              imagem="./navio.png"
+              conteudo1=""
+            />
+            <div className="divisoria"></div>
             <Post
               data="01/05/21"
               mestre="Botelho"

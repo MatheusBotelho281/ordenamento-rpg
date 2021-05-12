@@ -162,6 +162,21 @@ export default function Home() {
               conteudo1=""
                />
                <div className="divisoria"></div> */}
+            <Post
+              data="11/05/21"
+              mestre="Botelho"
+              titulo="Novidade vindo no Hub"
+              conteudo="Como é possível notar, o nome do site mudou, justamente porque a ideia geral de como 
+              isso vai funcionar mudou também. Os RPGs irão TODOS entrarem aqui com o passar do tempo,
+              terão áreas para cada um, e esse feed para uma visão geral de tudo, para que todos possam ver o que
+              ta rolando nos outros RPGs."
+              borda=""
+              imagem=""
+              conteudo1="Espero conseguir entregar algo bom para todos, sejam mestre ou jogadores, e também tem o sistema
+              de ficha por aqui que ainda está bem longe de ficar pronto, é algo que chamo de Table Project, mas com certeza
+              o nome vai melhorar. Sahvot meus caros, sahvot."
+            />
+            <div className="divisoria"></div>
             <PostComLink
               data="10/05/21"
               mestre="Botelho"

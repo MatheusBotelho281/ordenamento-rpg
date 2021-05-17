@@ -9,6 +9,10 @@ width:100%;
 border: 1px solid transparent;
 border-bottom: 1px solid white;
 box-shadow: 3px 5px 10px black;
+.btn-success{
+    background-color: transparent;
+    border-color: transparent;
+}
 `
 
 export const Divisoria = styled.div`

@@ -12,6 +12,7 @@ export default function HeaderNew() {
                 <Divisoria style={{ display: "flex", flexDirection: "row" }}>
                     <Opcao>Mesas Atuais</Opcao>
                     <Opcao>Futuras Mesas</Opcao>
+                    <Opcao>Arquivos</Opcao>
                     <Opcao>Sabedoria</Opcao>
                     <Opcao>Ficha Online (WIP)</Opcao>
                 </Divisoria>

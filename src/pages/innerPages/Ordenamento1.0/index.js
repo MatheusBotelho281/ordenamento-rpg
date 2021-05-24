@@ -1,5 +1,5 @@
 import React from 'react'
-import { Título, Texto, Wrapper, InnerWrapper, Imagem } from '../styles'
+import { Título, Texto, Wrapper, InnerWrapper, Imagem } from './styles.js'
 
 export default function Ordenamento1() {
   return (

@@ -62,13 +62,24 @@ border-radius: 3px;
 margin-bottom: 20px;
 `
 
-export default function Ordenamento1() {
+export default function BoasVindas() {
 
   return (
     <>
       <Wrapper>
         <InnerWrapper>
-          <iframe src="https://discord.com/widget?id=517026316378308629&theme=dark" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <Título>Bem Vindos ao HUB do RPG</Título>
+          <Texto>
+            Agora tudo, ou quase, sobre o RPG estará por aqui, informações, dados de sessões passadas e tudo o que
+             o mestre achar útil para os jogadores. (Talvez algo inútil em algum post ou outro, mas sabe como é, acontece...)
+          </Texto>
+          <Texto>
+            Todos os mestres estarão sempre listados nessa página inicial junto de seus RPGs atuais.
+          </Texto>
+          <Imagem src="./HUB.png"></Imagem>
+          <Texto>
+            Joguem com vontade e lembrem-se, "Se uma lança deve acertar, ela vai acertar."
+          </Texto>
         </InnerWrapper>
       </Wrapper>
     </>

@@ -55,10 +55,10 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Arquivos `}
                             >
-                                <Dropdown.Item eventKey="1">Fichas</Dropdown.Item>
-                                <Dropdown.Item eventKey="2">Livros Jogador</Dropdown.Item>
-                                <Dropdown.Item eventKey="3">Livros Mestre</Dropdown.Item>
-                                <Dropdown.Item eventKey="4">Todos os Livros</Dropdown.Item>
+                                <Dropdown.Item eventKey="1" href="https://drive.google.com/file/d/1K8NFFWCmD98E893fUzTBklKEg4lMbWCC/view?usp=sharing" target="_blank">Fichas D&D</Dropdown.Item>
+                                <Dropdown.Item eventKey="2" href="https://drive.google.com/file/d/1uSV0-jSg1rLiyP93PxO9l9NkBeM9DHHH/view?usp=sharing" target="_blank">Livros Jogador D&D</Dropdown.Item>
+                                <Dropdown.Item eventKey="3" href="https://drive.google.com/file/d/1t9rATqqmCsRp4yXewP4hVjYlngCzckm-/view?usp=sharing" target="_blank">Livros Mestre D&D</Dropdown.Item>
+                                <Dropdown.Item eventKey="4" href="https://drive.google.com/file/d/19Gr0S62QeqZdWymRQx0nfZf8JG-eqory/view?usp=sharing" target="_blank">Todos os Livros D&D</Dropdown.Item>
                             </DropdownButton>
                         ))}
                     </div>

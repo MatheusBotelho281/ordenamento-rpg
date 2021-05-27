@@ -8,8 +8,14 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 margin-top: 25px;
+text-align: justify;
+ul{
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+}
 iframe{
-  position: fixed;
+  position: absolute;
   top: 250px;
   left: 55px;
   width: 300px;
@@ -60,6 +66,16 @@ max-height: 370px;
 border: 1px solid white;
 border-radius: 3px;
 margin-bottom: 20px;
+`
+
+const Botao = styled.button`
+width: 200px;
+margin-bottom: 20px;
+border: none;
+background-color: darkred;
+color: white;
+font-size: 17px;
+font-family: "Nunito", sans-serif;
 `
 
 export default function Ordenamento1() {

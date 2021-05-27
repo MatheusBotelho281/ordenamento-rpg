@@ -5,6 +5,7 @@ import { ToTop, Wrapper } from '../styles/home'
 import Ordenamento1 from './innerPages/Ordenamento1.0'
 import { useState } from 'react'
 import BoasVindas from './innerPages/Boas Vindas e Novidades'
+import Despertar from './innerPages/Despertar'
 
 
 
@@ -12,11 +13,18 @@ export default function novaHome() {
 
     const [PaginaMostrando, setPaginaMostrando] = useState("vazio")
     const [Ordenamento, setOrdenamento] = useState(false)
+    const [Campeao, setCampeao] = useState(false)
     const [Novidades, setNovidades] = useState(true)
 
     function OrdenamentoOn(){
         setNovidades(false)
+        setCampeao(false)
         setOrdenamento(true)
+    }
+    function CampeaoOn(){
+        setNovidades(false)
+        setCampeao(true)
+        setOrdenamento(false)
     }
     return (
         <>
@@ -24,12 +32,14 @@ export default function novaHome() {
             <Wrapper>
                 <HeaderNew 
                 Ordenamento={OrdenamentoOn}
+                Despertar={CampeaoOn}
                 ></HeaderNew>
                 <ToTop href="#">
                 </ToTop>
             </Wrapper>
             {Novidades && <BoasVindas />}
             {Ordenamento && <Ordenamento1 />}
+            {Campeao && <Despertar />}
         </>
     )
 }

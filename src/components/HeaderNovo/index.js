@@ -42,6 +42,7 @@ export default function HeaderNew(props) {
                                 title={` Próximas Mesas `}
                             >
                                 <Dropdown.Item eventKey="1">The Witcher</Dropdown.Item>
+                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item>
                             </DropdownButton>
                         ))}
                     </div>

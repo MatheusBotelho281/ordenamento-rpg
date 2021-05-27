@@ -9,6 +9,11 @@ justify-content: center;
 flex-direction: column;
 margin-top: 25px;
 text-align: justify;
+.discord{
+    @media only screen and (max-width: 1400px){
+      display: none;
+    }
+  }
 ul{
   color: white;
   font-family: "Nunito", sans-serif;
@@ -39,6 +44,13 @@ display: flex;
 align-items: start;
 justify-content: center;
 flex-direction: column;
+transition: all 0.4s;
+@media only screen and (max-width: 1400px){
+  width: 60%
+}
+@media only screen and (max-width: 768px){
+  width: 95%
+}
 `
 
 const Post = styled.div`
@@ -66,6 +78,9 @@ max-height: 370px;
 border: 1px solid white;
 border-radius: 3px;
 margin-bottom: 20px;
+@media only screen and (max-width: 768px){
+  width: 400px;
+}
 `
 
 const Botao = styled.button`

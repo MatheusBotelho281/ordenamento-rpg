@@ -141,7 +141,7 @@ export default function Despertar() {
           <Texto>
             Um pacote com o necessário está abaixo, apenas clique e baixe ele, não é pesado.
           </Texto>
-          <Botao>Baixar Pacote de Iniciante</Botao>
+          <a href="./Pack de Iniciante.zip" download><Botao>Baixar Pacote de Iniciante</Botao></a>
           <Texto>
             Entre no discord e comunique que vai querer participar da aventura, assim será mais fácil organizar tudo e ajudar quem tem dúvidas.
           </Texto>

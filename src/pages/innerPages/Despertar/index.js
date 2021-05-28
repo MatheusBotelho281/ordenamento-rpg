@@ -79,7 +79,7 @@ border: 1px solid white;
 border-radius: 3px;
 margin-bottom: 20px;
 @media only screen and (max-width: 768px){
-  width: 400px;
+  width: 370px;
 }
 `
 

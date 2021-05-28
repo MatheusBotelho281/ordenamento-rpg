@@ -20,4 +20,7 @@ right: 20px;
 svg{
     color: black;
 }
+@media only screen and (max-width: 768px){
+    display: none;
+}
 `

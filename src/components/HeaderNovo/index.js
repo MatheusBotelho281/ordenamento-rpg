@@ -12,15 +12,15 @@ export default function HeaderNew(props) {
     const [esquerda, setEsquerda] = useState("-1200px")
     const [menuImage, setMenuImage] = useState("./menu.png")
 
-    function menuFunction(){
-        if(esquerda == "-1200px"){
+    function menuFunction() {
+        if (esquerda == "-1200px") {
             setEsquerda("0")
-        }else if(esquerda == "0"){
+        } else if (esquerda == "0") {
             setEsquerda("-1200px")
         }
-        if(menuImage == "./menu.png"){
+        if (menuImage == "./menu.png") {
             setMenuImage("./close.png")
-        }else if(menuImage == "./close.png"){
+        } else if (menuImage == "./close.png") {
             setMenuImage("./menu.png")
         }
     }
@@ -88,10 +88,11 @@ export default function HeaderNew(props) {
                 </Divisoria>
             </Wrapper>
             <WrapperMobile menu={esquerda} className="menuDesktop" >
-                <Divisoria style={{ width: "380px", height: "120px" }}>
+                <Divisoria style={{ width: "280px", height: "120px" }}>
                     <Logo src="./HUB.png" />
                 </Divisoria>
-                <Divisoria className="mobile-menu" style={{ display: "flex", position: "fixed", top: '0',backgroundColor: "black"}}>
+                <Divisoria className="mobile-menu" style={{ display: "flex", position: "fixed", top: '0', backgroundColor: "black" }}>
+                    <Logo src="./HUB.png" style={{width: "150px", margin: "0 0 80px 70px"}} />
                     <div className="mb-2">
                         {['right'].map((direction) => (
                             <DropdownButton
@@ -102,9 +103,9 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Mesas Atuais `}
                             >
-                                <Dropdown.Item eventKey="1" onClick={props.Ordenamento}>Ordenamento</Dropdown.Item>
-                                <Dropdown.Item eventKey="2">Ordenamento Campanha dos 7</Dropdown.Item>
-                                <Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.Ordenamento}>Ordenamento</Dropdown.Item></span>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="2">Ordenamento Campanha dos 7</Dropdown.Item></span>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item></span>
                             </DropdownButton>
                         ))}
                     </div>
@@ -118,8 +119,8 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Próximas Mesas `}
                             >
-                                <Dropdown.Item eventKey="1">The Witcher</Dropdown.Item>
-                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="1">The Witcher</Dropdown.Item></span>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar</Dropdown.Item></span>
                             </DropdownButton>
                         ))}
                     </div>

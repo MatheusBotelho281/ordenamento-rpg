@@ -79,8 +79,8 @@ transition: all 0.5s;
     width: 150px;
 }
 buttom{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     background-color: #252525;
     color: white;
     justify-content: center;
@@ -92,6 +92,10 @@ buttom{
     right: 15px;
     img{
         width: 30px;
+    }
+    @media only screen and (max-width: 500px){
+        width: 40px;
+        height: 40px;
     }
 }
 `

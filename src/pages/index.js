@@ -6,6 +6,7 @@ import Ordenamento1 from './innerPages/Ordenamento1.0'
 import { useState } from 'react'
 import BoasVindas from './innerPages/Boas Vindas e Novidades'
 import Despertar from './innerPages/Despertar'
+import TheWitcher from './innerPages/The Witcher'
 
 
 
@@ -13,17 +14,26 @@ export default function novaHome() {
 
     const [PaginaMostrando, setPaginaMostrando] = useState("vazio")
     const [Ordenamento, setOrdenamento] = useState(false)
+    const [Witcher, setWitcher] = useState(false)
     const [Campeao, setCampeao] = useState(false)
     const [Novidades, setNovidades] = useState(true)
 
     function OrdenamentoOn(){
         setNovidades(false)
         setCampeao(false)
+        setWitcher(false)
         setOrdenamento(true)
     }
     function CampeaoOn(){
         setNovidades(false)
         setCampeao(true)
+        setWitcher(false)
+        setOrdenamento(false)
+    }
+    function WitcherOn(){
+        setNovidades(false)
+        setCampeao(false)
+        setWitcher(true)
         setOrdenamento(false)
     }
     return (
@@ -33,6 +43,7 @@ export default function novaHome() {
                 <HeaderNew 
                 Ordenamento={OrdenamentoOn}
                 Despertar={CampeaoOn}
+                WitcheRPG={WitcherOn}
                 ></HeaderNew>
                 <ToTop href="#">
                 </ToTop>
@@ -40,6 +51,7 @@ export default function novaHome() {
             {Novidades && <BoasVindas />}
             {Ordenamento && <Ordenamento1 />}
             {Campeao && <Despertar />}
+            {Witcher && <TheWitcher />}
         </>
     )
 }

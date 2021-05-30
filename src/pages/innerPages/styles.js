@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
 width: 100%;
 display: flex;
 align-items: center;
@@ -8,6 +8,11 @@ justify-content: center;
 flex-direction: column;
 margin-top: 25px;
 text-align: justify;
+.discord{
+    @media only screen and (max-width: 1400px){
+      display: none;
+    }
+  }
 ul{
   color: white;
   font-family: "Nunito", sans-serif;
@@ -32,32 +37,39 @@ iframe{
   }
 }
 `
-const InnerWrapper = styled.div`
+export const InnerWrapper = styled.div`
 width: 45%;
 display: flex;
 align-items: start;
 justify-content: center;
 flex-direction: column;
+transition: all 0.4s;
+@media only screen and (max-width: 1400px){
+  width: 60%
+}
+@media only screen and (max-width: 768px){
+  width: 95%
+}
 `
 
-const Post = styled.div`
+export const Post = styled.div`
 display: flex;
 flex-direction: column;
 font-family: "Nunito", sans-serif;
 `
 
-const Texto = styled.p`
+export const Texto = styled.p`
 color: white;
 font-size: 17px;
 font-family: "Nunito", sans-serif;
 `
 
-const Título = styled.h3`
+export const Título = styled.h3`
 color: lightgray;
 font-family: "Nunito", sans-serif;
 `
 
-const Imagem = styled.img`
+export const Imagem = styled.img`
 width: ${props => props.largura};
 height: ${props => props.altura};
 max-width: 620px;
@@ -65,9 +77,12 @@ max-height: 370px;
 border: 1px solid white;
 border-radius: 3px;
 margin-bottom: 20px;
+@media only screen and (max-width: 768px){
+  width: 300px;
+}
 `
 
-const Botao = styled.button`
+export const Botao = styled.button`
 width: 200px;
 margin-bottom: 20px;
 border: none;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Wrapper, InnerWrapper, Post, Texto, Título, Imagem, Botao } from "../styles"
+import {Wrapper, InnerWrapper , Post, Texto, Título, Imagem, Botao} from "../Styles/styles"
 
 export default function TheWitcher() {
 

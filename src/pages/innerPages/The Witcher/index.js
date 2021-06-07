@@ -100,6 +100,29 @@ export default function TheWitcher() {
       <Wrapper>
         <InnerWrapper>
           <Título>
+            Guerras de Nilfgaard | <span style={{ fontSize: "23px" }}>06/06/2021</span>
+          </Título>
+          <Texto>
+            Rumores de guerra se espalham pelo mundo assim como o fogo se espalha em palha. Nilfgaard começou a convocar novos
+            guerreiros, os melhores de suas terras, aqueles que buscam mercenários perto das terras do Sul ficam dias sem resposta
+            nenhuma. Cavalos também se tornaram raros, boa parte foi comprada pelo imperador, ferreiros e armeiros estão sem tempo
+            para responder a requisições de pessoas simples, se mantendo ocupados apenas com encomendas dos nobres que governam
+            as regiões do Império do Grande Sol.
+          </Texto>
+          <Texto>
+            As fronteiras de Vicovaro estão se fechando aos poucos, qualquer morador do Norte é proibido de pôr os pés nas cidades
+            do império, todas as atitudes das cidades e seus governantes apenas aumenta o risco de uma guerra, e uma com proporções
+            enormes, especialistas afirmam que caso isso ocorra, não passaria de um avanço inútil contra os reinos do Norte, porque
+            contam com a proteção diplomática de Cintra.
+          </Texto>
+          <Texto>
+            Todos os países têm se preparado para ataques, alguns o fazem por questões meramente políticas, não querem deixar seus
+            vizinhos se armarem quando estão despreparados para um combate. Teméria tem tido um grande trabalho enviando tropas de
+            batedores para coletar informações, ataques de Nilfgaard já ocorreram anteriormente ao país, deixando-o frágil e com medo
+            de outros ataques.
+          </Texto>
+          <div style={{ width: "100%", height: "2px", backgroundColor: "gray", margin: "30px 0" }} />
+          <Título>
             História quase pronta. | <span style={{ fontSize: "23px" }}>29/05/2021</span>
           </Título>
           <Texto>
@@ -109,18 +132,7 @@ export default function TheWitcher() {
             O sistema usado será o The Witcher RPG Oficial. A ficha será disponibilizada para download algum tempo antes do RPG, as fichas serão
             montadas em conjunto com o mestre, o sistema é bem complexo e é bom ter um acompanhamento para montar e modificar os status dos personagens.
           </Texto>
-          <Texto>
-            Muito mudou desde os acontecimentos da Era do Renascer, onde o panteão foi levado ao utilizado nos livros e jogos e as linhas temporais estabilizadas. Mas existem males obscuros, escondidos
-            da visão de todos apenas aguardando o momento para agir. Muitos tem visto a Caçada Selvagem cortar os céus, buscam algo sem tirarem tempo para descansar,
-            creem que trazem o fim de tudo, o <span style={{ color: "red" }}>Ragnarok</span>.
-          </Texto>
-          <Texto>
-            Alguns feiticeiros têm estudado uma anomalia mágica nas Ilhas Okami, ocorreram a pouco mais de 6 meses, alguns têm tentado contatar a escola de bruxos
-            no local, sem sucesso retornam ao velho estilo, viagens longas e perigosas até as Ilhas. Cartas viajam rapidamente entre as pequenas vilas de Okami, não querem
-            tantos feiticeiros, eles trazem problemas quando estão buscando algo. Contratos para bruxos quebrarem feitiços tem aparecido cada vez mais em meio
-            às cartas da Escola do Dragão.
-          </Texto>
-          <Imagem src="./escolaDragao.jpeg" loading="lazy" alt="Escola do Dragão"/>
+          <Imagem src="./escolaDragao.jpeg" loading="lazy" alt="Escola do Dragão" />
         </InnerWrapper>
       </Wrapper>
     </>

@@ -44,7 +44,7 @@ export default function HeaderNew(props) {
                             >
                                 <Dropdown.Item eventKey="1" onClick={props.Ordenamento}>Ordenamento</Dropdown.Item>
                                 <Dropdown.Item eventKey="2">Ordenamento Campanha dos 7</Dropdown.Item>
-                                <Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item>
+                                {/* <Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item> */}
                             </DropdownButton>
                         ))}
                     </div>
@@ -58,8 +58,8 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Próximas Mesas `}
                             >
-                                <Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item>
-                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item>
+                                {/* <Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item>
+                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item> */}
                             </DropdownButton>
                         ))}
                     </div>
@@ -77,7 +77,7 @@ export default function HeaderNew(props) {
                                 <Dropdown.Item eventKey="2" href="https://drive.google.com/file/d/1uSV0-jSg1rLiyP93PxO9l9NkBeM9DHHH/view?usp=sharing" target="_blank">Livros Jogador D&D</Dropdown.Item>
                                 <Dropdown.Item eventKey="3" href="https://drive.google.com/file/d/1t9rATqqmCsRp4yXewP4hVjYlngCzckm-/view?usp=sharing" target="_blank">Livros Mestre D&D</Dropdown.Item>
                                 <Dropdown.Item eventKey="4" href="https://drive.google.com/file/d/19Gr0S62QeqZdWymRQx0nfZf8JG-eqory/view?usp=sharing" target="_blank">Todos os Livros D&D</Dropdown.Item>
-                                <Dropdown.Item eventKey="5" href="./Ficha Witcher 1.9.pdf" download>Ficha Witcher</Dropdown.Item>
+                                {/* <Dropdown.Item eventKey="5" href="./Ficha Witcher 1.9.pdf" download>Ficha Witcher</Dropdown.Item> */}
                             </DropdownButton>
                         ))}
                     </div>
@@ -106,7 +106,7 @@ export default function HeaderNew(props) {
                             >
                                 <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.Ordenamento}>Ordenamento</Dropdown.Item></span>
                                 <span onClick={menuFunction}><Dropdown.Item eventKey="2">Ordenamento Campanha dos 7</Dropdown.Item></span>
-                                <span onClick={menuFunction}><Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item></span>
+                                {/* <span onClick={menuFunction}><Dropdown.Item eventKey="3">F.U.D.E.U.</Dropdown.Item></span> */}
                             </DropdownButton>
                         ))}
                     </div>
@@ -120,8 +120,8 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Próximas Mesas `}
                             >
-                                <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item></span>
-                                <span onClick={menuFunction}><Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar</Dropdown.Item></span>
+                                {/* <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item></span>
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar</Dropdown.Item></span> */}
                             </DropdownButton>
                         ))}
                     </div>
@@ -139,7 +139,7 @@ export default function HeaderNew(props) {
                                 <Dropdown.Item eventKey="2" href="https://drive.google.com/file/d/1uSV0-jSg1rLiyP93PxO9l9NkBeM9DHHH/view?usp=sharing" target="_blank">Livros Jogador D&D</Dropdown.Item>
                                 <Dropdown.Item eventKey="3" href="https://drive.google.com/file/d/1t9rATqqmCsRp4yXewP4hVjYlngCzckm-/view?usp=sharing" target="_blank">Livros Mestre D&D</Dropdown.Item>
                                 <Dropdown.Item eventKey="4" href="https://drive.google.com/file/d/19Gr0S62QeqZdWymRQx0nfZf8JG-eqory/view?usp=sharing" target="_blank">Todos os Livros D&D</Dropdown.Item>
-                                <Dropdown.Item eventKey="5" href="./Ficha Witcher 1.9.pdf" download>Ficha Witcher</Dropdown.Item>
+                                {/* <Dropdown.Item eventKey="5" href="./Ficha Witcher 1.9.pdf" download>Ficha Witcher</Dropdown.Item> */}
                             </DropdownButton>
                         ))}
                     </div>

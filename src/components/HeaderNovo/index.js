@@ -58,8 +58,8 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Próximas Mesas `}
                             >
-                                {/* <Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item>
-                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item> */}
+                                {/* <Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item> */}
+                                <Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar do Campeão Gélido</Dropdown.Item>
                             </DropdownButton>
                         ))}
                     </div>
@@ -120,8 +120,8 @@ export default function HeaderNew(props) {
                                 variant="secondary"
                                 title={` Próximas Mesas `}
                             >
-                                {/* <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item></span>
-                                <span onClick={menuFunction}><Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar</Dropdown.Item></span> */}
+                                {/* <span onClick={menuFunction}><Dropdown.Item eventKey="1" onClick={props.WitcheRPG}>The Witcher</Dropdown.Item></span> */}
+                                <span onClick={menuFunction}><Dropdown.Item eventKey="2" onClick={props.Despertar}>Despertar</Dropdown.Item></span>
                             </DropdownButton>
                         ))}
                     </div>

@@ -100,17 +100,18 @@ export default function BoasVindas() {
     <>
       <Wrapper>
         <InnerWrapper>
-          <Título>Bem Vindos ao HUB do RPG</Título>
+          <Título>Bem Vindos ao HUB do RPG | Botelho</Título>
           <Texto>
-            Agora tudo, ou quase, sobre o RPG estará por aqui, informações, dados de sessões passadas e tudo o que
-             o mestre achar útil para os jogadores. (Talvez algo inútil em algum post ou outro, mas sabe como é, acontece...)
+            Apenas um pequeno projeto para as mesas de RPG, aqui terão resumos de sessões, arquivos, personagens de cada aventura
+            e as melhores frases 
           </Texto>
           <Texto>
-            Todos os mestres estarão sempre listados nessa página inicial junto de seus RPGs atuais.
+            Por agora a área de Sabedoria está sendo contruida, ainda será necessário um tempo bom para arrumar todas as frases. 
+            Caso queiram podem enviar todas as melhores frases que saem dos RPGs para mim.
           </Texto>
           <Imagem src="./HUB.png"></Imagem>
           <Texto>
-            Joguem com vontade e lembrem-se, "Se uma lança deve acertar, ela vai acertar."
+            E lembrem-se, "Se uma lança deve acertar, ela vai acertar."
           </Texto>
         </InnerWrapper>
       </Wrapper>

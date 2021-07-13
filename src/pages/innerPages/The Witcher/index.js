@@ -176,7 +176,7 @@ export default function TheWitcher() {
           <Texto>
             No One-Shot, os jogadores controlarão famosas personalidades do universo Witcher em um contrato grandioso, podendo levar várias sessões para
             desvendar o que tem causado o problema e resolver de uma vez por todas as complicações.
-            <br /> Tudo começará no dia 31/07.
+            <br /> Tudo começará no dia 14/08.
           </Texto>
           <buttom onClick={PopUpShow} style={{backgroundColor: "white", width: "500px",height: "70px", cursor: "pointer", alignItems: "center", display: "flex", justifyContent: "center", fontSize: "x-large", marginBottom: "30px"}}>Video pra dar uma animada</buttom>
           {PopUp && <div className="PopDiv" onClick={PopUpGo}><img src="./close.png" onClick={PopUpGo}></img><iframe className="Pop" width="1730" height="715" src="https://www.youtube.com/embed/0WQ9nqa4V1o" title="YouTube video player" frameborder="0" allowfullscreen /></div>}

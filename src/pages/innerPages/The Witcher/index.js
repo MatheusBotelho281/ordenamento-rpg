@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useState } from 'react'
 
 const Wrapper = styled.div`
 width: 100%;
@@ -19,7 +20,7 @@ ul{
   font-family: "Nunito", sans-serif;
   font-size: 17px;
 }
-iframe{
+.iframeDisc{
   position: absolute;
   top: 250px;
   left: 55px;
@@ -50,6 +51,57 @@ transition: all 0.4s;
 }
 @media only screen and (max-width: 768px){
   width: 95%
+}
+.Pop{
+  width:1366px;
+  height: 768px;
+  position: fixed;
+  z-index: 999999;
+  transition: all 0.2s;
+  @media only screen and (max-width: 1500px){
+     width:1200px;
+     height: 600px;
+    }
+    @media only screen and (max-width: 1200px){
+     width:1000px;
+     height: 500px;
+    }
+    @media only screen and (max-width: 1000px){
+     width:800px;
+     height: 600px;
+    }
+    @media only screen and (max-width: 800px){
+     width:630px;
+     height: 300px;
+    }
+    @media only screen and (max-width: 600px){
+     width:300px;
+     height: 200px;
+    }
+}
+.PopDiv{
+  transition: all 0.2s;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height:100%;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 99999;
+  img{
+    cursor: pointer;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    width: 32px;
+    @media only screen and (max-width: 1600px){
+      right: 25px;
+      top: 55px;
+    }
+  }
 }
 `
 
@@ -95,44 +147,39 @@ font-family: "Nunito", sans-serif;
 
 export default function TheWitcher() {
 
+  const [PopUp, setPopUp] = useState(false)
+
+  function PopUpShow() {
+    setPopUp(true)
+  }
+  function PopUpGo() {
+    setPopUp(false)
+  }
+
   return (
     <>
       <Wrapper>
         <InnerWrapper>
           <Título>
-            Guerras de Nilfgaard | <span style={{ fontSize: "23px" }}>06/06/2021</span>
+            Contrata-se um bruxo | <span style={{ fontSize: "23px" }}>13/07/2021</span>
           </Título>
           <Texto>
-            Rumores de guerra se espalham pelo mundo assim como o fogo se espalha em palha. Nilfgaard começou a convocar novos
-            guerreiros, os melhores de suas terras, aqueles que buscam mercenários perto das terras do Sul ficam dias sem resposta
-            nenhuma. Cavalos também se tornaram raros, boa parte foi comprada pelo imperador, ferreiros e armeiros estão sem tempo
-            para responder a requisições de pessoas simples, se mantendo ocupados apenas com encomendas dos nobres que governam
-            as regiões do Império do Grande Sol.
+            "Bruxos se tornaram raros, os poucos que ainda andam por essas terras são conhecidos pelo povo, peço a algum desses que me auxilie em um trabalho.
+            <br /> Para adiantar um pouco mais o contrato, o pagamento será de 20.000 coroas, um valor alto o suficiente para que qualquer um compre uma bela
+            mansão e viva nela por longos anos com fartura. Porém existe um bom motivo atrelado ao valor, a quantidade de criaturas dentro de minha propriedade
+            é muito maior do que qualquer um já tenha enfrentado, dois feiticeiros e um bruxo entraram no local e não voltaram, e isso já faz muito tempo, as
+            criaturas podem ter se reproduzido por lá. <br /> O pagamento será feito integralmente para cada um que voltar vivo do trabalho. Enquanto ao local,
+            é bem grande, com 32 hectares, 2 vilarejos onde meus serviçais trabalhavam antes da tragédia e minha casa, com muitos cômodos.
+            <br /> Para mais detalhes e a assinatura formal do contrato me encontre na estalagem Djinn Manso."
           </Texto>
+          <Imagem src="https://i.redd.it/wwabrcwi4i721.png" />
           <Texto>
-            As fronteiras de Vicovaro estão se fechando aos poucos, qualquer morador do Norte é proibido de pôr os pés nas cidades
-            do império, todas as atitudes das cidades e seus governantes apenas aumenta o risco de uma guerra, e uma com proporções
-            enormes, especialistas afirmam que caso isso ocorra, não passaria de um avanço inútil contra os reinos do Norte, porque
-            contam com a proteção diplomática de Cintra.
+            No One-Shot, os jogadores controlarão famosas personalidades do universo Witcher em um contrato grandioso, podendo levar várias sessões para
+            desvendar o que tem causado o problema e resolver de uma vez por todas as complicações.
+            <br /> Tudo começará no dia 31/07.
           </Texto>
-          <Texto>
-            Todos os países têm se preparado para ataques, alguns o fazem por questões meramente políticas, não querem deixar seus
-            vizinhos se armarem quando estão despreparados para um combate. Teméria tem tido um grande trabalho enviando tropas de
-            batedores para coletar informações, ataques de Nilfgaard já ocorreram anteriormente ao país, deixando-o frágil e com medo
-            de outros ataques.
-          </Texto>
-          <div style={{ width: "100%", height: "2px", backgroundColor: "gray", margin: "30px 0" }} />
-          <Título>
-            História quase pronta. | <span style={{ fontSize: "23px" }}>29/05/2021</span>
-          </Título>
-          <Texto>
-            Poucos detalhes faltando para finalizar toda a história para o segundo arco, <span style={{ fontWeight: "700", color: "lightblue" }}>A Caçada Selvagem</span>.
-          </Texto>
-          <Texto>
-            O sistema usado será o The Witcher RPG Oficial. A ficha será disponibilizada para download algum tempo antes do RPG, as fichas serão
-            montadas em conjunto com o mestre, o sistema é bem complexo e é bom ter um acompanhamento para montar e modificar os status dos personagens.
-          </Texto>
-          <Imagem src="./escolaDragao.jpeg" loading="lazy" alt="Escola do Dragão" />
+          <buttom onClick={PopUpShow} style={{backgroundColor: "white", width: "500px",height: "70px", cursor: "pointer", alignItems: "center", display: "flex", justifyContent: "center", fontSize: "x-large", marginBottom: "30px"}}>Video pra dar uma animada</buttom>
+          {PopUp && <div className="PopDiv" onClick={PopUpGo}><img src="./close.png" onClick={PopUpGo}></img><iframe className="Pop" width="1730" height="715" src="https://www.youtube.com/embed/0WQ9nqa4V1o" title="YouTube video player" frameborder="0" allowfullscreen /></div>}
         </InnerWrapper>
       </Wrapper>
     </>

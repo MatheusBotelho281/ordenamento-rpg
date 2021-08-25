@@ -15,7 +15,7 @@ export default function campeao() {
                     Ainda em construção para o mobile, não tenho ideia de quando ficará pronto!
                 </h1>
             </Bloqueio>
-            <HeaderSpecial RPG="Despertas do Campeão Gélido (WIP)" />
+            <HeaderSpecial RPG="Despertar do Campeão Gélido" />
             <Destaque />
         </>
     )

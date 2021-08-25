@@ -3,26 +3,59 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
 display: flex;
 align-items:center;
-justify-content: space-evenly;
+justify-content: center;
 width: 100%;
-.MenuLateral{
-    position: absolute;
-    left: 0;
-    background-color: rgba(22,22,22);
-    width: 500px;
-    height: 100%;
-    overflow: hidden;
+background-color: #1B1A23;
+h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    @media only screen and (max-width: 635px){
+        font-size: medium;
+    } 
+}
+img{
+    height:50px;
+    width: 50px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    @media only screen and (max-width: 635px){
+        width: 30px;
+        height: 30px;
+    }
 }
 `
 
-export const Menu = styled.img`
-width: 40px;
-margin: 30px 0 30px 50px;
-cursor: pointer;
-`
-
-export const Titulo = styled.p`
-color: white;
-font-family: 'Cinzel', serif;
-font-size: 40px;
+export const InnerWrapper = styled.div`
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+div{
+    display: flex;
+    align-items: center;
+}
+.option-menu-header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    :hover{
+        color: red;
+        opacity: 0.9;
+    }
+}
+.hide{
+    @media only screen and (max-width: 1250px){
+        display: none;
+    }
+}
+@media only screen and (max-width: 635px){
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `

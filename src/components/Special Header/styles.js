@@ -37,14 +37,15 @@ div{
 }
 .option-menu-header{
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
     font-weight: 400;
     color: white;
     margin: 0 20px 0 0;
     cursor: pointer;
     transition: all 0.3s;
     :hover{
-        color: red;
-        opacity: 0.9;
+        color: #c52549;
     }
 }
 .hide{

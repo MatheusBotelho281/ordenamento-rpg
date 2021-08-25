@@ -97,3 +97,19 @@ transition: all 0.4s;
   transform: translateY(3px);
 }
 `
+
+export const Bloqueio = styled.div`
+z-index: 999999999;
+width: 100%;
+height: 100%;
+position: fixed;
+display: none;
+align-items: center;
+justify-content: center;
+top: 0;
+background-color: black;
+flex-direction: column;
+@media only screen and (max-width: 1200px){
+  display: flex
+}
+`

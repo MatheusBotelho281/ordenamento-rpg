@@ -178,7 +178,7 @@ export default function TheWitcher() {
             desvendar o que tem causado o problema e resolver de uma vez por todas as complicações.
             <br /> Tudo começará no dia 14/08.
           </Texto>
-          <buttom onClick={PopUpShow} style={{backgroundColor: "white", width: "75%",height: "70px", cursor: "pointer", alignItems: "center", display: "flex", justifyContent: "center", fontSize: "x-large", marginBottom: "30px"}}>Vídeo em breve</buttom>
+          <buttom onClick={PopUpShow} style={{backgroundColor: "white", width: "50%",height: "70px", cursor: "pointer", alignItems: "center", display: "flex", justifyContent: "center", fontSize: "x-large", marginBottom: "30px"}}>Vídeo em breve</buttom>
           {PopUp && <div className="PopDiv" onClick={PopUpGo}><img src="./close.png" onClick={PopUpGo}></img><iframe className="Pop" width="1730" height="715" src="https://www.youtube.com/embed/0WQ9nqa4V1o" title="YouTube video player" frameborder="0" allowfullscreen /></div>}
         </InnerWrapper>
       </Wrapper>
